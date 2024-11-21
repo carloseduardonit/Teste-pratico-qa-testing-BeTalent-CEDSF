@@ -1,0 +1,11 @@
+{
+  "name": "betalent",
+  "version": "1.0.0",
+  "description": "teste do processo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
