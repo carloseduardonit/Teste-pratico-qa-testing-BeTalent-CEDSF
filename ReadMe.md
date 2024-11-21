@@ -14,7 +14,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 # 1. UI TESTING
 
-A tarefa aqui é testar a plataforma de e-commerce Sauce Demo (https://www.saucedemo.com). Suponha que a plataforma precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
+A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
 
 ## 1.1 Instruções
 
@@ -72,20 +72,21 @@ A tarefa aqui é testar a plataforma de e-commerce Sauce Demo (https://www.sauce
 
 # 2 API TESTING
 
-A tarefa aqui é testar a API do Restful-Booker (https://restful-booker.herokuapp.com), um sistema de reservas de hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la.
+A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokuapp.com), um sistema de reservas de hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la.
 
-2.1 Instruções:
-2.1.1 Analise a documentação da API fornecida
-2.1.2 Crie e execute testes para os endpoints principais
-2.1.3 Documente os resultados e comportamentos encontrados
+## 2.1 Instruções
 
-2.2 Cenários:
+ [ ] 2.1.1 Analise a documentação da API fornecida
+ [ ] 2.1.2 Crie e execute testes para os endpoints principais
+ [ ] 2.1.3 Documente os resultados e comportamentos encontrados
 
-2.2.1 Autenticação:
-2.2.1.1 Gerar token de autenticação
-2.2.1.2 Tentar gerar token com credenciais inválidas
+## 2.2 Cenários
 
-2.2.2 Gestão de reservas:
+ [ ] 2.2.1 Autenticação:
+    [ ] 2.2.1.1 Gerar token de autenticação
+    [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
+
+ [ ] 2.2.2 Gestão de reservas:
 2.2.2.1 Criar uma nova reserva
 2.2.2.2 Buscar uma reserva específica
 2.2.2.3 Listar todas as reservas
