@@ -1,5 +1,6 @@
 
-Teste Prático QA Testing
+# Teste Prático QA Testing
+
 Bem-vindo(a) ao Teste Prático QA Testing BeTalent!
 
 Você terá de executar e documentar dois tipos de testes:
@@ -21,6 +22,15 @@ A tarefa aqui é testar a plataforma de e-commerce Sauce Demo (https://www.sauce
 
 1.2 Cenários mínimos a serem testados:
 1.2.1 Login com diferentes tipos de usuários disponíveis 
+ |Usuario                   |Senha          |
+ |standard_user             |secret_sauce   |
+ |locked_out_user           |secret_sauce   |
+ |problem_user              |secret_sauce   |
+ |performance_glitch_user   |secret_sauce   |
+ |error_user                |secret_sauce   |
+ |visual_user               |secret_sauce   |
+
+
 1.2.2 Ordenação e filtragem de produtos 
 1.2.3 Fluxo completo de compra (do carrinho até finalização) 
 1.2.4 Remoção de itens do carrinho 
@@ -54,7 +64,7 @@ A tarefa aqui é testar a plataforma de e-commerce Sauce Demo (https://www.sauce
 1.5.3 Inclua prints de tela quando relevante
 
 ---------------------------------
-# 2. API TESTING
+# 2 API TESTING
 
 A tarefa aqui é testar a API do Restful-Booker (https://restful-booker.herokuapp.com), um sistema de reservas de hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la. 
 
@@ -104,7 +114,8 @@ A tarefa aqui é testar a API do Restful-Booker (https://restful-booker.herokuap
 2.6.2 Documente quaisquer premissas assumidas, se possível
 
 -----------------------------------
-3. Considerações finais:
+
+# 3. Considerações finais:
 Caso não consiga completar os testes até o prazo definido:
 3.1 Garanta que tudo que foi construído esteja em funcionamento
 3.2 Relate na documentação quais foram as dificuldades encontradas
