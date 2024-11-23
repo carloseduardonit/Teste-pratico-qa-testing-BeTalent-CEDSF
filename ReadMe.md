@@ -89,9 +89,12 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
 - [ ] 2.2.2 Gestão de reservas:
-  - [ ] 2.2.2.1 Criar uma nova reserva
+  ![Autorização](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/Autorização.png)
+  - [X] 2.2.2.1 Criar uma nova reserva
+  ![Criar uma nova reserva](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
   - [ ] 2.2.2.2 Buscar uma reserva específica
-  - [ ] 2.2.2.3 Listar todas as reservas
+  - [X] 2.2.2.3 Listar todas as reservas
+  ![Listar todas as reservas](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
   - [ ] 2.2.2.4 Atualizar uma reserva existente
   - [ ] 2.2.2.5 Deletar uma reserva
 
