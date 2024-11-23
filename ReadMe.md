@@ -26,14 +26,14 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 - [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
 
- |Usuario                   |Senha          |
- | :---:                    |     :---:     |
- |standard_user             |secret_sauce   |
- |locked_out_user           |secret_sauce   |
- |problem_user              |secret_sauce   |
- |performance_glitch_user   |secret_sauce   |
- |error_user                |secret_sauce   |
- |visual_user               |secret_sauce   |
+ |ID  |Usuario                   |Senha          |
+ |---:| :---:                    |:---:          |
+ |01  |standard_user             |secret_sauce   |
+ |02  |locked_out_user           |secret_sauce   |
+ |03  |problem_user              |secret_sauce   |
+ |04  |performance_glitch_user   |secret_sauce   |
+ |05  |error_user                |secret_sauce   |
+ |06  |visual_user               |secret_sauce   |
 
 - [ ] 1.2.2 Ordenação e filtragem de produtos
 - [ ] 1.2.3 Fluxo completo de compra (do carrinho até finalização)
