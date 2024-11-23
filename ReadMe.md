@@ -27,7 +27,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 - [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
 
  |Usuario                   |Senha          |
-
+ | :---:                    |     :---:     |
  |standard_user             |secret_sauce   |
  |locked_out_user           |secret_sauce   |
  |problem_user              |secret_sauce   |
