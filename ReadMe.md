@@ -97,6 +97,7 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   - [X] [2.2.2.3 Listar todas as reservas](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.json)
   ![Listar todas as reservas](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
   - [ ] 2.2.2.4 Atualizar uma reserva existente
+  ![Antes de Atualizar uma reserva existente](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
   - [ ] 2.2.2.5 Deletar uma reserva
 
 - [ ] 2.2.3 Filtros e buscas:
@@ -133,6 +134,8 @@ Caso não consiga completar os testes até o prazo definido:
 ## 3.1 Garanta que tudo que foi construído esteja em funcionamento
 
 ## 3.2 Relate na documentação quais foram as dificuldades encontradas
+
+- Tive  dificuldade  para obter os usuarios e senha para o teste do UI TESTING
 
 ## 3.3 Documente o que foi implementado e o que ficou pendente
 
