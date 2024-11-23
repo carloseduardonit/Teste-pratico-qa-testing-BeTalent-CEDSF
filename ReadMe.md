@@ -84,7 +84,8 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 ## 2.2 Cenários
 
 - [ ] 2.2.1 Autenticação:
-  - [ ] 2.2.1.1 Gerar token de autenticação
+  - [X] [2.2.1.1 Gerar token de autenticação](/JSON/2-2%20cenarios/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
+  ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2-2%20%20cenarios/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
 - [ ] 2.2.2 Gestão de reservas:
