@@ -32,14 +32,22 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 - [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
 
- |ID  |Usuario                   |Senha          |Situação|
- |---:| :---:                    |:---:          |----    |
- |01  |standard_user             |secret_sauce   |Acessar o sistema  |
- |02  |locked_out_user           |secret_sauce   |Mensagem: Epic sadface: Sorry, this user has been locked out.   |
- |03  |problem_user              |secret_sauce   |Acessar o sistema Errado   |
- |04  |performance_glitch_user   |secret_sauce   |----    |
- |05  |error_user                |secret_sauce   |Acessar o sistema com erros   |
- |06  |visual_user               |secret_sauce   |----    |
+``` Gherkin
+  Feature: Login de usuários no sistema
+    Como um usuário do sistema
+    Quero acessar o sistema com diferentes credenciais
+```
+
+  Para validar os comportamentos específicos de cada tipo de usuário
+
+ |ID  |Usuario                   |Senha          |
+ |---:| :---:                    |:---:          |
+ |01  |standard_user             |secret_sauce   |
+ |02  |locked_out_user           |secret_sauce   |
+ |03  |problem_user              |secret_sauce   |
+ |04  |performance_glitch_user   |secret_sauce   |
+ |05  |error_user                |secret_sauce   |
+ |06  |visual_user               |secret_sauce   |
 
 ``` Gherkin
   Scenario: Login bem-sucedido com usuário padrão
@@ -58,11 +66,42 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 ```
 
  ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
+
+``` Gherkin
+  Scenario: Problemas ao acessar o sistema com usuário problem_user
+      Given o usuário está na página de login "https://www.saucedemo.com/"
+      When ele insere o nome de usuário "problem_user" e a senha "secret_sauce"
+      Then o sistema deve apresentar erros de comportamento no acesso
+```
+
  ![problem_user](/IMAGEM/2.1%20Cenario%20UI/Login/problem_user.gif)
  
- |performance_glitch_user|error_user |visual_user|
- |:---:                  |:---:           |:---:       |
- |![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)|![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)|![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)|
+ ``` Gherkin
+   Scenario: Performance lenta com usuário performance_glitch_user
+    Given o usuário está na página de login "https://www.saucedemo.com/"
+    When ele insere o nome de usuário "performance_glitch_user" e a senha "secret_sauce"
+    Then o sistema deve demorar para responder
+```
+
+ ![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)
+
+ ``` Gherkin
+cenario: Erros ao acessar com usuário error_user
+    Given o usuário está na página de login "https://www.saucedemo.com/"
+    When ele insere o nome de usuário "error_user" e a senha "secret_sauce"
+    Then o sistema deve acessar com erros no comportamento
+ ```
+
+ ![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)
+
+``` Gherkin
+Scenario: Validar impacto visual com usuário visual_user
+    Given o usuário está na página de login "https://www.saucedemo.com/"
+    When ele insere o nome de usuário "visual_user" e a senha "secret_sauce"
+    Then o sistema deve exibir comportamentos ou alterações visuais incomuns
+```
+ 
+ ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
 - [ ] 1.2.2 Ordenação e filtragem de produtos
 - [ ] 1.2.3 Fluxo completo de compra (do carrinho até finalização)
