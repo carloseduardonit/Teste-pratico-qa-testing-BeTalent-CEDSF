@@ -1,4 +1,3 @@
-
 # Teste Prático QA Testing ID: bb7f0940-aee3-4b6b-a625-a2c58b9d62f7
 
 Bem-vindo(a) ao Teste Prático QA Testing BeTalent!
@@ -10,19 +9,25 @@ Você terá de executar e documentar dois tipos de testes:
 
 Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
+>[!CAUTION]
+>
+> - Não consiguir finalizar devido:
+>   - Computador travando
+>   - Dor no estomago
+
 ---------------------------------
 
-# 1. UI TESTING
+## 1. UI TESTING
 
 A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
 
-## 1.1 Instruções
+### 1.1 Instruções
 
 - [ ] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação
 - [ ] 1.1.2 Execute os testes manualmente e documente os resultados
 - [ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário
 
-## 1.2 Cenários mínimos a serem testados
+### 1.2 Cenários mínimos a serem testados
 
 - [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
 
@@ -45,7 +50,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 - [ ] 1.2.5 Navegação entre páginas
 - [ ] 1.2.6 Logout
 
-## 1.3 Entregáveis
+### 1.3 Entregáveis
 
 - [ ] 1.3.1 Documento formatado em Markdown (.md) contendo:
   - [ ] 1.3.1.1 Plano de testes estruturado com casos de teste
@@ -59,7 +64,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
   - [ ] 1.3.2.2 Testes de acessibilidade
   - [ ] 1.3.2.3 Sugestões de automação
 
-## 1.4 Critérios de avaliação
+### 1.4 Critérios de avaliação
 
 - [ ] 1.4.1 Organização e clareza da documentação, dentro dos critérios fornecidos
 - [ ] 1.4.2 Cobertura dos cenários críticos
@@ -69,7 +74,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
   - Tive  dificuldade  para obter os usuarios e senha para o teste do UI TESTING
     ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
-## 1.5 Observações
+### 1.5 Observações
 
 - [ ] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
 - [ ] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
@@ -77,17 +82,17 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 ---------------------------------
 
-# 2 API TESTING
+## 2 API TESTING
 
 A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokuapp.com), um sistema de reservas de hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la.
 
-## 2.1 Instruções
+### 2.1 Instruções
 
 - [ ] 2.1.1 Analise a documentação da API fornecida
 - [ ] 2.1.2 Crie e execute testes para os endpoints principais
 - [ ] 2.1.3 Documente os resultados e comportamentos encontrados
 
-## 2.2 Cenários
+### 2.2 Cenários
 
 - [ ] 2.2.1 Autenticação:
   - [X] [2.2.1.1 Gerar token de autenticação](/JSON/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
@@ -133,21 +138,21 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 
 ---------------------------------
 
-# 3. Considerações finais
+## 3. Considerações finais
 
 Caso não consiga completar os testes até o prazo definido:
 
-## 3.1 Garanta que tudo que foi construído esteja em funcionamento
+### 3.1 Garanta que tudo que foi construído esteja em funcionamento
 
-## 3.2 Relate na documentação quais foram as dificuldades encontradas
+### 3.2 Relate na documentação quais foram as dificuldades encontradas
 
 - Tive  dificuldade  para obter os usuarios e senha para o teste do UI TESTING
 
-## 3.3 Documente o que foi implementado e o que ficou pendente
+### 3.3 Documente o que foi implementado e o que ficou pendente
 
 ---------------------------------
 
-# 4. Envio dos entregáveis
+## 4. Envio dos entregáveis
 
 Os entregáveis de ambos os testes deverão ser hospedados em um repositório no seu GitHub. O link do repositório deverá ser fornecido por meio deste formulário. Não serão aceitos links de entregáveis enviados por outros meios.
 
