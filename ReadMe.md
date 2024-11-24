@@ -11,9 +11,10 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 >[!CAUTION]
 >
-> - Não consiguir finalizar devido:
+> - Eu não conseguir finalizar foi devido:
 >   - Computador travando
 >   - Dor no estomago
+>   - Semana de Prova da faculdade
 
 ---------------------------------
 
