@@ -96,7 +96,7 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   ![Buscar uma reserva específica](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.gif)
   - [X] [2.2.2.3 Listar todas as reservas](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.json)
   ![Listar todas as reservas](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
-  - [ ] 2.2.2.4 Atualizar uma reserva existente
+  - [X] 2.2.2.4 Atualizar uma reserva existente {[Antes](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json) e [Depois](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Depois%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json)}
   ![Antes de Atualizar uma reserva existente](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
   - [ ] 2.2.2.5 Deletar uma reserva
 
