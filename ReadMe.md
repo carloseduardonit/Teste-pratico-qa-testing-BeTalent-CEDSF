@@ -1,5 +1,5 @@
 
-# Teste Prático QA Testing
+# Teste Prático QA Testing ID: bb7f0940-aee3-4b6b-a625-a2c58b9d62f7
 
 Bem-vindo(a) ao Teste Prático QA Testing BeTalent!
 
@@ -84,20 +84,20 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 ## 2.2 Cenários
 
 - [ ] 2.2.1 Autenticação:
-  - [X] [2.2.1.1 Gerar token de autenticação](/JSON/2-2%20cenarios/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
-  ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2-2%20%20cenarios/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
+  - [X] [2.2.1.1 Gerar token de autenticação](/JSON/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
+  ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
 - [ ] 2.2.2 Gestão de reservas:
-  ![Autorização](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/Autorização.png)
+  ![Autorização](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova reserva](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.json)
-  ![Criar uma nova reserva](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
+  ![Criar uma nova reserva](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
   - [X] [2.2.2.2 Buscar uma reserva específica](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.json)
-  ![Buscar uma reserva específica](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.gif)
+  ![Buscar uma reserva específica](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.gif)
   - [X] [2.2.2.3 Listar todas as reservas](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.json)
-  ![Listar todas as reservas](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
+  ![Listar todas as reservas](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
   - [X] 2.2.2.4 Atualizar uma reserva existente {[Antes](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json) e [Depois](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Depois%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json)}
-  ![Antes de Atualizar uma reserva existente](/IMAGEM/2-2%20%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
+  ![Antes de Atualizar uma reserva existente](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
   - [ ] 2.2.2.5 Deletar uma reserva
 
 - [ ] 2.2.3 Filtros e buscas:
