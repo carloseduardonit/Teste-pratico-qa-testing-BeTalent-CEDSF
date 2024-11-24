@@ -86,11 +86,11 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
  ![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)
 
  ``` Gherkin
-cenario: Erros ao acessar com usuário error_user
+Scenario: Erros ao acessar com usuário error_user
     Given o usuário está na página de login "https://www.saucedemo.com/"
     When ele insere o nome de usuário "error_user" e a senha "secret_sauce"
     Then o sistema deve acessar com erros no comportamento
- ```
+```
 
  ![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)
 
@@ -104,9 +104,9 @@ Scenario: Validar impacto visual com usuário visual_user
  ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
 - [ ] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
-- [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)]()
-- [ ] [1.2.4 Remoção de itens do carrinho]()
-- [ ] [1.2.5 Navegação entre páginas]()
+- [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
+- [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
+- [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
 ``` Gherkin
@@ -190,10 +190,10 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 
 - [ ] 2.2.1 Autenticação:
   - [X] [2.2.1.1 Gerar token de autenticação](/JSON/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
-  ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
+  ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2.2%20cenario%20API/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
-- [ ] 2.2.2 Gestão de reservas:
+- [X] 2.2.2 Gestão de reservas:
   ![Autorização](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova reserva](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.json)
   ![Criar uma nova reserva](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
@@ -203,7 +203,7 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   ![Listar todas as reservas](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.gif)
   - [X] 2.2.2.4 Atualizar uma reserva existente {[Antes](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Antes%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json) e [Depois](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Depois%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json)}
   ![Antes de Atualizar uma reserva existente](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
-  - [ ] 2.2.2.5 Deletar uma reserva
+  - [X] 2.2.2.5 Deletar uma reserva
 
 - [ ] 2.2.3 Filtros e buscas:
   - [ ] 2.2.3.1 Buscar reservas por nome
