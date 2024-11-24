@@ -30,7 +30,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 ### 1.2 Cenários mínimos a serem testados
 
-- [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
+- [X] [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
 
 ``` Gherkin
   Feature: Login de usuários no sistema
@@ -75,7 +75,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 ```
 
  ![problem_user](/IMAGEM/2.1%20Cenario%20UI/Login/problem_user.gif)
- 
+
  ``` Gherkin
    Scenario: Performance lenta com usuário performance_glitch_user
     Given o usuário está na página de login "https://www.saucedemo.com/"
@@ -100,14 +100,49 @@ Scenario: Validar impacto visual com usuário visual_user
     When ele insere o nome de usuário "visual_user" e a senha "secret_sauce"
     Then o sistema deve exibir comportamentos ou alterações visuais incomuns
 ```
- 
+
  ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
-- [ ] 1.2.2 Ordenação e filtragem de produtos
-- [ ] 1.2.3 Fluxo completo de compra (do carrinho até finalização)
-- [ ] 1.2.4 Remoção de itens do carrinho
-- [ ] 1.2.5 Navegação entre páginas
-- [ ] 1.2.6 Logout
+- [ ] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
+- [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)]()
+- [ ] [1.2.4 Remoção de itens do carrinho]()
+- [ ] [1.2.5 Navegação entre páginas]()
+- [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
+
+``` Gherkin
+Feature: Logout pelo menu
+    Como um usuário autenticado
+    Quero realizar logout através do menu
+    Para encerrar minha sessão com segurança
+```
+
+``` Gherkin
+  Scenario: Logout com sucesso pelo menu
+    Given o usuário está logado no sistema
+    And o menu está visível
+    When ele clica no menu
+    And seleciona a opção "Logout"
+    Then ele deve ser redirecionado para a página de login
+    And sua sessão deve ser encerrada
+```
+
+![Logout com sucesso pelo menu](/IMAGEM/2.1%20Cenario%20UI/Logout/Logout%20com%20sucesso%20pelo%20menu.gif)
+
+``` Gherkin
+  Scenario: Menu não visível para usuários não autenticados
+    Given o usuário não está logado no sistema
+    When ele tenta acessar o menu
+    Then o menu de logout não deve ser exibido
+```
+
+![Menu não visível para usuários não autenticados](/IMAGEM/2.1%20Cenario%20UI/Logout/Menu%20não%20visível%20para%20usuários%20não%20autenticados.png)
+
+``` Gherkin
+  Scenario: Verificar existência da opção de logout no menu
+    Given o usuário está logado no sistema
+    When ele clica no menu
+    Then a opção "Logout" deve estar disponível
+```
 
 ### 1.3 Entregáveis
 
