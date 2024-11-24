@@ -196,7 +196,7 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 - [X] 2.2.2 Gestão de reservas:
   ![Autorização](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova reserva](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.json)
-  ![Criar uma nova reserva](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
+  ![Criar uma nova reserva](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
   - [X] [2.2.2.2 Buscar uma reserva específica](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.json)
   ![Buscar uma reserva específica](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.gif)
   - [X] [2.2.2.3 Listar todas as reservas](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.3%20Listar%20todas%20as%20reservas.json)
