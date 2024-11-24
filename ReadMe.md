@@ -26,14 +26,18 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 - [ ] 1.2.1 Login com diferentes tipos de usuários disponíveis
 
- |ID  |Usuario                   |Senha          |
- |---:| :---:                    |:---:          |
- |01  |standard_user             |secret_sauce   |
- |02  |locked_out_user           |secret_sauce   |
- |03  |problem_user              |secret_sauce   |
- |04  |performance_glitch_user   |secret_sauce   |
- |05  |error_user                |secret_sauce   |
- |06  |visual_user               |secret_sauce   |
+ |ID  |Usuario                   |Senha          |Situação|
+ |---:| :---:                    |:---:          |----    |
+ |01  |standard_user             |secret_sauce   |----    |
+ |02  |locked_out_user           |secret_sauce   |Epic sadface: Sorry, this user has been locked out.   |
+ |03  |problem_user              |secret_sauce   |----    |
+ |04  |performance_glitch_user   |secret_sauce   |----    |
+ |05  |error_user                |secret_sauce   |----    |
+ |06  |visual_user               |secret_sauce   |----    |
+
+ |Standard_user|locked_out_user |problem_user|
+ |:---:        |:---:           |:---:       |
+ |![standard_user](/IMAGEM/2.1%20Cenario%20UI/Login/standard_user.gif)|![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)||
 
 - [ ] 1.2.2 Ordenação e filtragem de produtos
 - [ ] 1.2.3 Fluxo completo de compra (do carrinho até finalização)
@@ -62,6 +66,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 - [ ] 1.4.3 Capacidade de identificar eventuais bugs/problemas
 - [ ] 1.4.4 Qualidade das sugestões de melhoria
 - [ ] 1.4.5 Pensamento crítico sobre eventuais riscos e impactos no negócio
+  - Tive  dificuldade  para obter os usuarios e senha para o teste do UI TESTING
+    ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
 ## 1.5 Observações
 
