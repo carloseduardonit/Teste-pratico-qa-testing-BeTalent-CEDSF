@@ -28,8 +28,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
  |ID  |Usuario                   |Senha          |Situação|
  |---:| :---:                    |:---:          |----    |
- |01  |standard_user             |secret_sauce   |----    |
- |02  |locked_out_user           |secret_sauce   |Epic sadface: Sorry, this user has been locked out.   |
+ |01  |standard_user             |secret_sauce   |Acessar o sistema  |
+ |02  |locked_out_user           |secret_sauce   |Mensagem: Epic sadface: Sorry, this user has been locked out.   |
  |03  |problem_user              |secret_sauce   |----    |
  |04  |performance_glitch_user   |secret_sauce   |----    |
  |05  |error_user                |secret_sauce   |----    |
@@ -95,7 +95,7 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
 - [ ] 2.2.2 Gestão de reservas:
-  ![Autorização](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
+  ![Autorização](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova reserva](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.json)
   ![Criar uma nova reserva](/IMAGEM/2.2%20cenarios%20API/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.png)
   - [X] [2.2.2.2 Buscar uma reserva específica](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.2%20Buscar%20uma%20reserva%20específica.json)
@@ -153,8 +153,3 @@ Os entregáveis de ambos os testes deverão ser hospedados em um repositório no
 
 Boa sorte! 🍀
 Enviar entregáveis
-
-Forneça aqui o link dos seus entregáveis no GitHub.
-Nunca envie senhas pelo Formulários Google.
-Este formulário foi criado em bemobile.tech. Denunciar abuso
-Google Formulários
