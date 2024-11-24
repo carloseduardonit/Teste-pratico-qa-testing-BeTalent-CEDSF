@@ -35,14 +35,18 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
  |---:| :---:                    |:---:          |----    |
  |01  |standard_user             |secret_sauce   |Acessar o sistema  |
  |02  |locked_out_user           |secret_sauce   |Mensagem: Epic sadface: Sorry, this user has been locked out.   |
- |03  |problem_user              |secret_sauce   |----    |
+ |03  |problem_user              |secret_sauce   |Acessar o sistema Errado   |
  |04  |performance_glitch_user   |secret_sauce   |----    |
  |05  |error_user                |secret_sauce   |----    |
  |06  |visual_user               |secret_sauce   |----    |
 
- |Standard_user|locked_out_user |problem_user|
+ |Standard_user|Locked_out_user |Problem_user|
  |:---:        |:---:           |:---:       |
- |![standard_user](/IMAGEM/2.1%20Cenario%20UI/Login/standard_user.gif)|![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)||
+ |![standard_user](/IMAGEM/2.1%20Cenario%20UI/Login/standard_user.gif)|![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)|![problem_user](/IMAGEM/2.1%20Cenario%20UI/Login/problem_user.gif)|
+
+ |performance_glitch_user|error_user |visual_user|
+ |:---:                  |:---:           |:---:       |
+ |![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)|![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)|![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)|
 
 - [ ] 1.2.2 Ordenação e filtragem de produtos
 - [ ] 1.2.3 Fluxo completo de compra (do carrinho até finalização)
