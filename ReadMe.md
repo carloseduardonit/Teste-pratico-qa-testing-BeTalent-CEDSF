@@ -142,8 +142,6 @@ Feature: Ordenação e filtragem de produtos
     When ele seleciona a opção "Nome: Z a A"
     Then os produtos devem ser exibidos em ordem alfabética decrescente
     And o primeiro produto deve ter o nome que começa com a maior letra alfabética disponível
-
-
 ```
 
 - [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
@@ -187,6 +185,8 @@ Feature: Ordenação e filtragem de produtos
 ```
 
 ``` Gherkin
+```
+
 - [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
 ``` Gherkin
