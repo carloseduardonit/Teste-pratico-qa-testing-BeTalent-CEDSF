@@ -13,14 +13,16 @@ Feature: Ordenação e filtragem de produtos
     When ele seleciona a opção "Preço: maior para menor"
     Then os produtos devem ser exibidos em ordem decrescente de preço
 
-  Scenario: Filtrar produtos por categoria
+    Scenario: Ordenar produtos por nome de A a Z
     Given o usuário está na página de listagem de produtos
-    And há produtos de diferentes categorias disponíveis
-    When ele seleciona a categoria "Eletrônicos"
-    Then somente os produtos da categoria "Eletrônicos" devem ser exibidos
+    And há produtos com diferentes nomes listados
+    When ele seleciona a opção "Nome: A a Z"
+    Then os produtos devem ser exibidos em ordem alfabética crescente
+    And o primeiro produto deve ter o nome que começa com a menor letra alfabética disponível
 
-  Scenario: Filtrar produtos por faixa de preço
+  Scenario: Ordenar produtos por nome de Z a A
     Given o usuário está na página de listagem de produtos
-    And há produtos com preços variados disponíveis
-    When ele define o filtro de preço entre "R$ 50,00" e "R$ 100,00"
-    Then somente os produtos com preços dentro dessa faixa devem ser exibidos
+    And há produtos com diferentes nomes listados
+    When ele seleciona a opção "Nome: Z a A"
+    Then os produtos devem ser exibidos em ordem alfabética decrescente
+    And o primeiro produto deve ter o nome que começa com a maior letra alfabética disponível

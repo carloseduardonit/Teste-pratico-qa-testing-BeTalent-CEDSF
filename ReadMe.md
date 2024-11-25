@@ -104,9 +104,111 @@ Scenario: Validar impacto visual com usuário visual_user
  ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
 - [ ] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
+
+``` Gherkin
+Feature: Ordenação e filtragem de produtos
+  Como um usuário do sistema
+  Quero ordenar e filtrar os produtos
+  Para facilitar a busca pelo item desejado
+```
+
+``` Gherkin
+ Scenario: Ordenar produtos por preço ascendente
+    Given o usuário está na página de listagem de produtos
+    When ele seleciona a opção "Preço: menor para maior"
+    Then os produtos devem ser exibidos em ordem crescente de preço
+```
+
+``` Gherkin
+  Scenario: Ordenar produtos por preço descendente
+    Given o usuário está na página de listagem de produtos
+    When ele seleciona a opção "Preço: maior para menor"
+    Then os produtos devem ser exibidos em ordem decrescente de preço
+```
+
+``` Gherkin
+  Scenario: Ordenar produtos por nome de A a Z
+    Given o usuário está na página de listagem de produtos
+    And há produtos com diferentes nomes listados
+    When ele seleciona a opção "Nome: A a Z"
+    Then os produtos devem ser exibidos em ordem alfabética crescente
+    And o primeiro produto deve ter o nome que começa com a menor letra alfabética disponível
+```
+
+``` Gherkin
+  Scenario: Ordenar produtos por nome de Z a A
+    Given o usuário está na página de listagem de produtos
+    And há produtos com diferentes nomes listados
+    When ele seleciona a opção "Nome: Z a A"
+    Then os produtos devem ser exibidos em ordem alfabética decrescente
+    And o primeiro produto deve ter o nome que começa com a maior letra alfabética disponível
+
+
+```
+
 - [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
 - [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
 - [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
+``` Gherkin
+
+```
+
 - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
 ``` Gherkin
