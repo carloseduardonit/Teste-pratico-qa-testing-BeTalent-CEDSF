@@ -103,7 +103,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
   ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
-- [ ] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
+- [X] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
 
   ``` Gherkin
   Feature: Ordenação e filtragem de produtos
@@ -128,7 +128,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
       Then os produtos devem ser exibidos em ordem decrescente de preço
   ```
 
-  ![Ordenar produtos por preço descendente]()
+  ![Ordenar produtos por preço descendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20descendente.gif)
 
   ``` Gherkin
     Scenario: Ordenar produtos por nome de A a Z
@@ -169,6 +169,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
     Then o produto "Produto A" deve ser adicionado ao carrinho
   ```
 
+  ![Adicionar produto ao carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Adicionar%20produto%20ao%20carrinho.gif)
+
   ``` Gherkin
   Scenario: Verificar itens no carrinho antes de finalizar a compra
     Given o usuário adicionou o "Produto A" ao carrinho
@@ -177,6 +179,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
     And o valor total do carrinho deve refletir o preço do "Produto A"
   ```
 
+  ![Verificar itens no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Verificar%20itens%20no%20carrinho.gif)
+
   ``` Gherkin
   Scenario: Remover produto do carrinho
     Given o usuário tem o produto "Produto A" no carrinho
@@ -184,6 +188,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
     Then o carrinho não deve exibir o produto "Produto A"
     And o valor total do carrinho deve ser atualizado
   ```
+
+  ![Remover produto do carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Remover%20produto%20do%20carrinho.gif)
 
   ``` Gherkin
   Scenario: Finalizar compra com sucesso
@@ -243,6 +249,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
     Then o produto "Produto A" deve ser removido do carrinho
     And o carrinho deve ser atualizado para refletir a remoção
   ```
+
+  ![Remover produto do carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Remover%20produto%20do%20carrinho.gif)
 
   ``` Gherkin
   Scenario: Remover múltiplos itens do carrinho
@@ -374,6 +382,10 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
+    :lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
+    ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
+    :lady_beetle:
+    :lady_beetle:
   - [ ] 1.3.1.5 Análise de riscos da aplicação
 
 - [ ] 1.3.2 Extras (diferenciais):
