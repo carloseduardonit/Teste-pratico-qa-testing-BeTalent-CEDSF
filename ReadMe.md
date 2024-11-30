@@ -15,7 +15,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 >   - Computador travando
 >     - pedir alguns prints no teste de API
 >   - Dor no estomago
->   - Semana de Prova da faculdade
+>   - Estudo concorrente:
+>     - Semana de Prova da faculdade
+>     - Prova  de certificação Salesforce
 
 ---------------------------------
 
