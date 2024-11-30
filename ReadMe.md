@@ -11,7 +11,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 >[!CAUTION]
 >
-> - Eu não conseguir finalizar foi devido:
+> - Eu não conseguir finalizar no dia 26/11/2024 foi devido:
 >   - Computador travando
 >   - Dor no estomago
 >   - Semana de Prova da faculdade
@@ -154,68 +154,181 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 
 - [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
 
-``` Gherkin
+  ``` Gherkin
+  Feature: Fluxo completo de compra
+    Como um usuário do sistema
+    Quero adicionar produtos ao carrinho e finalizar a compra
+    Para concluir a minha compra com sucesso
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Adicionar produto ao carrinho e finalizar a compra
+    Given o usuário está na página de listagem de produtos
+    And o usuário visualiza produtos disponíveis para compra
+    When ele adiciona o produto "Produto A" ao carrinho
+    Then o produto "Produto A" deve ser adicionado ao carrinho
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Verificar itens no carrinho antes de finalizar a compra
+    Given o usuário adicionou o "Produto A" ao carrinho
+    When ele acessa o carrinho de compras
+    Then o carrinho deve exibir o produto "Produto A"
+    And o valor total do carrinho deve refletir o preço do "Produto A"
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Remover produto do carrinho
+    Given o usuário tem o produto "Produto A" no carrinho
+    When ele remove o "Produto A" do carrinho
+    Then o carrinho não deve exibir o produto "Produto A"
+    And o valor total do carrinho deve ser atualizado
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Finalizar compra com sucesso
+    Given o usuário tem produtos no carrinho
+    When ele clica em "Finalizar compra"
+    And ele insere as informações de pagamento e endereço de entrega
+    Then a compra deve ser finalizada com sucesso
+    And o usuário deve ser redirecionado para a página de confirmação de pedido
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Verificar erro ao tentar finalizar compra sem itens no carrinho
+    Given o usuário não tem produtos no carrinho
+    When ele tenta finalizar a compra
+    Then ele deve ser informado que o carrinho está vazio
+    And a opção de finalizar a compra deve ser desabilitada
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Aplicar código de desconto no carrinho
+    Given o usuário tem o "Produto A" no carrinho
+    And ele possui um código de desconto válido
+    When ele aplica o código de desconto no carrinho
+    Then o valor total do carrinho deve ser reduzido de acordo com o desconto
+    And o usuário deve ver o valor do desconto aplicado
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Aplicar código de desconto no carrinho
+    Given o usuário tem o "Produto A" no carrinho
+    And ele possui um código de desconto válido
+    When ele aplica o código de desconto no carrinho
+    Then o valor total do carrinho deve ser reduzido de acordo com o desconto
+    And o usuário deve ver o valor do desconto aplicado
+  ```
 
-``` Gherkin
-
-```
+  ``` Gherkin
+  Scenario: Confirmar detalhes do pedido após a finalização
+    Given o usuário finalizou a compra
+    When ele visualiza a página de confirmação de pedido
+    Then ele deve ver os detalhes do pedido, incluindo os produtos comprados, o valor total e a estimativa de entrega
+  ```
 
 - [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
 
-``` Gherkin
+  ``` Gherkin
+  Feature: Remoção de itens do carrinho
+    Como um usuário do sistema
+    Quero remover itens do meu carrinho
+    Para atualizar a lista de produtos antes de finalizar a compra
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Remover um único item do carrinho
+    Given o usuário tem o produto "Produto A" no carrinho
+    When ele clica na opção de remover "Produto A"
+    Then o produto "Produto A" deve ser removido do carrinho
+    And o carrinho deve ser atualizado para refletir a remoção
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Remover múltiplos itens do carrinho
+      Given o usuário tem os produtos "Produto A" e "Produto B" no carrinho
+      When ele remove o "Produto A" e o "Produto B"
+      Then o carrinho deve ser vazio
+      And o valor total do carrinho deve ser zero
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Verificar atualização do valor após remoção
+      Given o usuário tem os produtos "Produto A" e "Produto B" no carrinho
+      And o valor total do carrinho é de R$ 100,00
+      When ele remove o "Produto A" do carrinho
+      Then o carrinho deve exibir apenas o "Produto B"
+      And o valor total do carrinho deve ser ajustado para refletir o preço do "Produto B"
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Verificar se o carrinho está vazio após remoção de todos os itens
+      Given o usuário tem produtos no carrinho
+      When ele remove todos os itens do carrinho
+      Then o carrinho deve estar vazio
+      And a mensagem "Seu carrinho está vazio" deve ser exibida
+  ```
 
-```
-
-``` Gherkin
-
-```
-
-``` Gherkin
-```
+  ``` Gherkin
+  Scenario: Cancelar remoção de item do carrinho
+      Given o usuário tem o produto "Produto A" no carrinho
+      When ele clica na opção de remover "Produto A"
+      And escolhe cancelar a remoção
+      Then o produto "Produto A" deve permanecer no carrinho
+      And o valor total do carrinho não deve ser alterado
+  ```
 
 - [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
-``` Gherkin
+  ``` Gherkin
+  Feature: Navegação entre páginas
+    Como um usuário do sistema
+    Quero navegar entre as diferentes páginas do site
+    Para explorar os produtos e realizar minha compra de forma eficiente
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Navegar da página inicial para a listagem de produtos
+      Given o usuário está na página inicial
+      When ele clica no link "Produtos" no menu
+      Then ele deve ser redirecionado para a página de listagem de produtos
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Navegar da página de listagem de produtos para a página de detalhes de um produto
+      Given o usuário está na página de listagem de produtos
+      And o produto "Produto A" está listado
+      When ele clica no produto "Produto A"
+      Then ele deve ser redirecionado para a página de detalhes do "Produto A"
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Navegar de volta da página de detalhes para a página de listagem de produtos
+      Given o usuário está na página de detalhes do "Produto A"
+      When ele clica no link "Voltar para listagem de produtos"
+      Then ele deve ser redirecionado para a página de listagem de produtos
+  ```
 
-``` Gherkin
+  ``` Gherkin
+  Scenario: Navegar do carrinho para a finalização da compra
+      Given o usuário tem itens no carrinho
+      When ele clica na opção "Finalizar compra"
+      Then ele deve ser redirecionado para a página de finalização da compra
+  ```
 
-```
+  ``` Gherkin
+  Scenario: Navegar para a página de login a partir da página de carrinho
+      Given o usuário não está logado
+      When ele clica no botão "Login" na página do carrinho
+      Then ele deve ser redirecionado para a página de login
+  ```
 
-``` Gherkin
-
-```
-
-``` Gherkin
-
-```
+  ``` Gherkin
+  Scenario: Verificar navegação para página de confirmação após finalização da compra
+      Given o usuário finalizou a compra com sucesso
+      When ele é redirecionado para a página de confirmação de pedido
+      Then ele deve ver a mensagem de confirmação e os detalhes do pedido
+  ```
 
 - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
