@@ -13,6 +13,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 >
 > - Eu não conseguir finalizar no dia 26/11/2024 foi devido:
 >   - Computador travando
+>     - pedir alguns prints no teste de API
 >   - Dor no estomago
 >   - Semana de Prova da faculdade
 
@@ -382,7 +383,7 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
-    :lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
+    - :lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
     ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
     :lady_beetle:
     :lady_beetle:
