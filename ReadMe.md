@@ -387,8 +387,8 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
     - :lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
     ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
-    :lady_beetle:
-    :lady_beetle:
+    - :lady_beetle:
+    - :lady_beetle:
   - [ ] 1.3.1.5 Análise de riscos da aplicação
 
 - [ ] 1.3.2 Extras (diferenciais):
