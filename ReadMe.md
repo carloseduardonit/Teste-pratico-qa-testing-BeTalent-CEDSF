@@ -23,7 +23,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 <details>
   <summary>
 
-    ## 1. UI TESTING
+## 1. UI TESTING
 
   </summary>
   A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma
@@ -428,7 +428,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 <details>
   <summary>
 
-    ## 2. API TESTING
+## 2. API TESTING
 
   </summary>
 
@@ -504,7 +504,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 <details>
   <summary>
 
-    ## 3. Considerações finais
+## 3. Considerações finais
 
   </summary>
 
@@ -523,7 +523,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 <details>
   <summary>
 
-    ## 4. Envio dos entregáveis
+## 4. Envio dos entregáveis
 
   </summary>
 
