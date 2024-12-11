@@ -536,21 +536,21 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   <summary>
     ## 5. Comando Executados node:
   </summary>
-  <details>
-    <summary>
-      ### Cypress:
-    </summary>
-  </details>
-  <details>
-    <summary>
-      ### PlayWright:
-    </summary>
-  </details>
-  <details>
-    <summary>
-      ### Selenium:
-    </summary>
-  </details>
+    <details>
+      <summary>
+        ### Cypress:
+      </summary>
+    </details>
+    <details>
+      <summary>
+        ### PlayWright:
+      </summary>
+    </details>
+    <details>
+      <summary>
+        ### Selenium:
+      </summary>
+    </details>
 </details>
 
 Boa sorte! 🍀
