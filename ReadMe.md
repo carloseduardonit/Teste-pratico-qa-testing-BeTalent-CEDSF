@@ -483,7 +483,9 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
 ---------------------------------
 <details>
   <summary>
-## 3. Considerações finais    
+
+## 3. Considerações finais  
+  
   </summary>
 
 Caso não consiga completar os testes até o prazo definido:
