@@ -532,26 +532,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ser fornecido por meio deste formulário. Não serão aceitos links de entregáveis enviados por outros meios.
 </details>
 
-<details>
-  <summary>
-    ## 5. Comando Executados node:
-  </summary>
-    <details>
-      <summary>
-        ### Cypress:
-      </summary>
-    </details>
-    <details>
-      <summary>
-        ### PlayWright:
-      </summary>
-    </details>
-    <details>
-      <summary>
-        ### Selenium:
-      </summary>
-    </details>
-</details>
+
 
 Boa sorte! 🍀
 Enviar entregáveis
