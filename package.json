@@ -4,7 +4,8 @@
   "description": "teste do processo",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "test1": " playwright test --ui"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,8 @@
     "cypress": "^13.16.1"
   },
   "dependencies": {
-    "cucumber": "^6.0.7"
+    "cucumber": "^6.0.7",
+    "selenium-webdriver": "^4.27.0",
+    "mocha": "^10.8.2"
   }
 }

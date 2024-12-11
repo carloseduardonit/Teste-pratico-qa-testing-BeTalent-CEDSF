@@ -20,9 +20,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 >     - Prova  de certificação Salesforce
 
 ---------------------------------
-
+<details>
+  <summary>
+ 
 ## 1. UI TESTING
 
+  </summary>
 A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
 
 ### 1.1 Instruções
@@ -411,10 +414,17 @@ A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.sauc
 - [ ] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
 - [ ] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
 - [ ] 1.5.3 Inclua prints de tela quando relevante
+</details>
 
 ---------------------------------
+<details>
+  <summary>
 
 ## 2 API TESTING
+
+  </summary>
+
+
 
 A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokuapp.com), um sistema de reservas de hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la.
 
@@ -468,9 +478,13 @@ A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokua
   - [ ] 2.6.1 Use Postman ou qualquer outra ferramenta de sua preferência
   - [ ] 2.6.2 Documente quaisquer premissas assumidas, se possível
 
----------------------------------
+</details>
 
-## 3. Considerações finais
+---------------------------------
+<details>
+  <summary>
+## 3. Considerações finais    
+  </summary>
 
 Caso não consiga completar os testes até o prazo definido:
 
@@ -481,6 +495,7 @@ Caso não consiga completar os testes até o prazo definido:
 - Tive  dificuldade  para obter os usuarios e senha para o teste do UI TESTING
 
 ### 3.3 Documente o que foi implementado e o que ficou pendente
+</details>
 
 ---------------------------------
 
