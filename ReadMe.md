@@ -18,9 +18,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 > - Estudo concorrente:
 >   - Semana de Prova da faculdade
 >   - [Prova de certificação Salesforce](https://www.linkedin.com/feed/update/urn:li:activity:7275676610475798530/)
-> - Clique nos titulos conforme a imagem 
-> - <img src="" >
-
+> - Clique nos Titulos abaixo para ver os paragrafos conforme a demostração: :point_down:
+> <img src="/IMAGEM/demostracao.gif" alt="Demostração de com fazer">
 
 ---------------------------------
 <details>
