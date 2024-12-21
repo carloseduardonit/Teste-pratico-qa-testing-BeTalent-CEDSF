@@ -13,11 +13,14 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 >
 > - Eu não conseguir finalizar no dia 26/11/2024 foi devido:
 > - Computador travando
-> - pedir alguns prints no teste de API
+>   - pedir alguns prints no teste de API
 > - Dor no estomago
 > - Estudo concorrente:
-> - Semana de Prova da faculdade
-> - Prova de certificação Salesforce
+>   - Semana de Prova da faculdade
+>   - [Prova de certificação Salesforce](https://www.linkedin.com/feed/update/urn:li:activity:7275676610475798530/)
+> - Clique nos titulos conforme a imagem 
+> - <img src="" >
+
 
 ---------------------------------
 <details>
@@ -526,8 +529,6 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 ## 4. Envio dos entregáveis
 
   </summary>
-
-
   Os entregáveis de ambos os testes deverão ser hospedados em um repositório no seu GitHub. O link do repositório deverá
   ser fornecido por meio deste formulário. Não serão aceitos links de entregáveis enviados por outros meios.
 </details>
