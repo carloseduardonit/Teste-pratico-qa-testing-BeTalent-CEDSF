@@ -257,6 +257,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ver os detalhes do pedido, incluindo os produtos comprados, o valor total e a estimativa de entrega
   ```
 
+    ![Confirmar detalhes do pedido após a finalização](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+
   - [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
 
   ``` Gherkin
@@ -284,6 +286,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o valor total do carrinho deve ser zero
   ```
 
+  ![Remover múltiplos itens do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
+
   ``` Gherkin
   Scenario: Verificar atualização do valor após remoção
   Given o usuário tem os produtos "Produto A" e "Produto B" no carrinho
@@ -292,6 +296,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then o carrinho deve exibir apenas o "Produto B"
   And o valor total do carrinho deve ser ajustado para refletir o preço do "Produto B"
   ```
+
+  ![Verificar atualização do valor após remoção](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
   ``` Gherkin
   Scenario: Verificar se o carrinho está vazio após remoção de todos os itens
@@ -459,7 +465,6 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   autenticação](/JSON/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
   ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2.2%20cenario%20API/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
-
 - [X] 2.2.2 Gestão de reservas:
   ![Autorização](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova
@@ -481,13 +486,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ![Antes de Atualizar uma reserva
   existente](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
   - [X] 2.2.2.5 Deletar uma reserva
-
-  - [ ] 2.2.3 Filtros e buscas:
+- [ ] 2.2.3 Filtros e buscas:
   - [ ] 2.2.3.1 Buscar reservas por nome
   - [ ] 2.2.3.2 Buscar reservas por data de check-in
   - [ ] 2.2.3.3 Buscar reservas por data de check-out
 
-  - [ ] 2.3 Entregáveis:
+- [ ] 2.3 Entregáveis:
   - [ ] 2.3.1 Collection contendo:
   - [ ] 2.3.1.1 Todos os requests organizados
   - [ ] 2.3.1.2 Pelo menos um teste para cada request
