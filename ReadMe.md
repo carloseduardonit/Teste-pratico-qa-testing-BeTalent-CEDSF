@@ -32,15 +32,15 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma
   precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
 
-  ### 1.1 Instruções
+### 1.1 Instruções
 
-  - [ ] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação
-  - [ ] 1.1.2 Execute os testes manualmente e documente os resultados
-  - [ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário
+- [ ] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação
+- [ ] 1.1.2 Execute os testes manualmente e documente os resultados
+- [ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário
 
-  ### 1.2 Cenários mínimos a serem testados
+### 1.2 Cenários mínimos a serem testados
 
-  - [X] [1.2.1 Login com diferentes tipos de usuários
+- [X] [1.2.1 Login com diferentes tipos de usuários
   disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
 
   ``` Gherkin
@@ -216,6 +216,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o usuário deve ser redirecionado para a página de confirmação de pedido
   ```
 
+  ![Finalizar compra com sucesso](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+
   ``` Gherkin
   Scenario: Verificar erro ao tentar finalizar compra sem itens no carrinho
   Given o usuário não tem produtos no carrinho
@@ -224,14 +226,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And a opção de finalizar a compra deve ser desabilitada
   ```
 
-  ``` Gherkin
-  Scenario: Aplicar código de desconto no carrinho
-  Given o usuário tem o "Produto A" no carrinho
-  And ele possui um código de desconto válido
-  When ele aplica o código de desconto no carrinho
-  Then o valor total do carrinho deve ser reduzido de acordo com o desconto
-  And o usuário deve ver o valor do desconto aplicado
-  ```
+  ![Verificar erro ao tentar finalizar compra sem itens no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
   ``` Gherkin
   Scenario: Aplicar código de desconto no carrinho
@@ -241,6 +236,19 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then o valor total do carrinho deve ser reduzido de acordo com o desconto
   And o usuário deve ver o valor do desconto aplicado
   ```
+
+  ![Aplicar código de desconto no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+
+  ``` Gherkin
+  Scenario: Aplicar código de desconto no carrinho
+  Given o usuário tem o "Produto A" no carrinho
+  And ele possui um código de desconto válido
+  When ele aplica o código de desconto no carrinho
+  Then o valor total do carrinho deve ser reduzido de acordo com o desconto
+  And o usuário deve ver o valor do desconto aplicado
+  ```
+
+  ![Aplicar código de desconto no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
   ``` Gherkin
   Scenario: Confirmar detalhes do pedido após a finalização
@@ -392,9 +400,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then a opção "Logout" deve estar disponível
   ```
 
-  ### 1.3 Entregáveis
+### 1.3 Entregáveis
 
-  - [ ] 1.3.1 Documento formatado em Markdown (.md) contendo:
+- [ ] 1.3.1 Documento formatado em Markdown (.md) contendo:
   - [ ] 1.3.1.1 Plano de testes estruturado com casos de teste
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
@@ -404,8 +412,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - :lady_beetle:
   - :lady_beetle:
   - [ ] 1.3.1.5 Análise de riscos da aplicação
-
-  - [ ] 1.3.2 Extras (diferenciais):
+- [ ] 1.3.2 Extras (diferenciais):
   - [ ] 1.3.2.1 Testes de responsividade
   - [ ] 1.3.2.2 Testes de acessibilidade
   - [ ] 1.3.2.3 Sugestões de automação
@@ -420,11 +427,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING
   ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
-  ### 1.5 Observações
+### 1.5 Observações
 
-  - [ ] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
-  - [ ] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
-  - [ ] 1.5.3 Inclua prints de tela quando relevante
+- [ ] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
+- [ ] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
+- [ ] 1.5.3 Inclua prints de tela quando relevante
+
 </details>
 
 ---------------------------------
@@ -435,26 +443,24 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   </summary>
 
-
-
   A tarefa aqui é testar a [API do Restful-Booker](https://restful-booker.herokuapp.com), um sistema de reservas de
   hotel. Suponha que a API precisa ser validada antes de ser integrada com o front-end e cabe a você testá-la.
 
-  ### 2.1 Instruções
+### 2.1 Instruções
 
-  - [ ] 2.1.1 Analise a documentação da API fornecida
-  - [ ] 2.1.2 Crie e execute testes para os endpoints principais
-  - [ ] 2.1.3 Documente os resultados e comportamentos encontrados
+- [ ] 2.1.1 Analise a documentação da API fornecida
+- [ ] 2.1.2 Crie e execute testes para os endpoints principais
+- [ ] 2.1.3 Documente os resultados e comportamentos encontrados
 
-  ### 2.2 Cenários
+### 2.2 Cenários
 
-  - [ ] 2.2.1 Autenticação:
+- [ ] 2.2.1 Autenticação:
   - [X] [2.2.1.1 Gerar token de
   autenticação](/JSON/2.2%20cenarios%20API/2.2.1.1%20Gerar%20token%20de%20autenticação%20via%20Json.json)
   ![2.2.1.1 Gerar token de autenticação](/IMAGEM/2.2%20cenario%20API/2.2.1.1%20Gerar%20token%20de%20autenticação.png)
   - [ ] 2.2.1.2 Tentar gerar token com credenciais inválidas
 
-  - [X] 2.2.2 Gestão de reservas:
+- [X] 2.2.2 Gestão de reservas:
   ![Autorização](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Autorização.png)
   - [X] [2.2.2.1 Criar uma nova
   reserva](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/2.2.2.1%20Criar%20uma%20nova%20reserva.json)
@@ -491,13 +497,13 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 2.3.2.2 Resultados obtidos
   - [ ] 2.3.2.3 Bugs encontrados (se houver)
 
-  - [ ] 2.4 Pontos de atenção:
+- [ ] 2.4 Pontos de atenção:
   - [ ] 2.4.1 Tratamento de erros
   - [ ] 2.4.2 Validação de campos obrigatórios
   - [ ] 2.4.3 Formato das datas
   - [ ] 2.4.4 Códigos de resposta HTTP
 
-  - [ ] 2.5 Observações:
+- [ ] 2.5 Observações:
   - [ ] 2.6.1 Use Postman ou qualquer outra ferramenta de sua preferência
   - [ ] 2.6.2 Documente quaisquer premissas assumidas, se possível
 
@@ -513,13 +519,14 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   Caso não consiga completar os testes até o prazo definido:
 
-  ### 3.1 Garanta que tudo que foi construído esteja em funcionamento
+### 3.1 Garanta que tudo que foi construído esteja em funcionamento
 
-  ### 3.2 Relate na documentação quais foram as dificuldades encontradas
+### 3.2 Relate na documentação quais foram as dificuldades encontradas
 
-  - Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING
+- Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING
 
-  ### 3.3 Documente o que foi implementado e o que ficou pendente
+### 3.3 Documente o que foi implementado e o que ficou pendente
+
 </details>
 
 ---------------------------------
@@ -532,8 +539,6 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Os entregáveis de ambos os testes deverão ser hospedados em um repositório no seu GitHub. O link do repositório deverá
   ser fornecido por meio deste formulário. Não serão aceitos links de entregáveis enviados por outros meios.
 </details>
-
-
 
 Boa sorte! 🍀
 Enviar entregáveis
