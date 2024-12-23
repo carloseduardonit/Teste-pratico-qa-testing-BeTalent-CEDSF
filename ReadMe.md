@@ -60,6 +60,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   |05 |error_user |secret_sauce |
   |06 |visual_user |secret_sauce |
 
+#### Login bem-sucedido com usuário padrão
+
   ``` Gherkin
   Scenario: Login bem-sucedido com usuário padrão
   Given o usuário está na página de login "https://www.saucedemo.com/"
@@ -68,6 +70,10 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![standard_user](/IMAGEM/2.1%20Cenario%20UI/Login/standard_user.gif)
+
+ ---
+
+#### Login bloqueado com usuário locked_out_user
 
   ``` Gherkin
   Scenario: Login bloqueado com usuário locked_out_user
