@@ -410,6 +410,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then a opção "Logout" deve estar disponível
   ```
 
+  ![Verificar existência da opção de logout no menu](/IMAGEM/2.1%20Cenario%20UI/Logout/Verificar%20existência%20da%20opção%20de%20logout%20no%20menu.gif)
+
 ### 1.3 Entregáveis
 
 - [ ] 1.3.1 Documento formatado em Markdown (.md) contendo:
