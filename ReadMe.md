@@ -316,7 +316,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
-- [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
+- [V] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
   ``` Gherkin
   Feature: Navegação entre páginas
@@ -331,6 +331,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   When ele clica no link "Produtos" no menu
   Then ele deve ser redirecionado para a página de listagem de produtos
   ```
+
+  :lady_beetle:
 
   ``` Gherkin
   Scenario: Navegar da página de listagem de produtos para a página de detalhes de um produto
@@ -367,14 +369,16 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ser redirecionado para a página de login
   ```
 
+  :lady_beetle:
+
   ``` Gherkin
   Scenario: Verificar navegação para página de confirmação após finalização da compra
   Given o usuário finalizou a compra com sucesso
   When ele é redirecionado para a página de confirmação de pedido 
   Then ele deve ver a mensagem de confirmação e os detalhes do pedido 
   ```
-  
- :lady_beetle:
+
+  :lady_beetle:
 
 - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
