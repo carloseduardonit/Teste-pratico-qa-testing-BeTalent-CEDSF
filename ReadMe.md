@@ -114,7 +114,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
-  - [X] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
+- [X] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
 
   ``` Gherkin
   Feature: Ordenação e filtragem de produtos
@@ -130,8 +130,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then os produtos devem ser exibidos em ordem crescente de preço
   ```
 
-  ![Ordenar produtos por preço
-  ascendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20ascendente.gif)
+  ![Ordenar produtos por preço ascendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20ascendente.gif)
 
   ``` Gherkin
   Scenario: Ordenar produtos por preço descendente
@@ -140,8 +139,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then os produtos devem ser exibidos em ordem decrescente de preço
   ```
 
-  ![Ordenar produtos por preço
-  descendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20descendente.gif)
+  ![Ordenar produtos por preçodescendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20descendente.gif)
 
   ``` Gherkin
   Scenario: Ordenar produtos por nome de A a Z
@@ -152,8 +150,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o primeiro produto deve ter o nome que começa com a menor letra alfabética disponível
   ```
 
-  ![Ordenar produtos por nome de A a
-  Z](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20A%20a%20Z.gif)
+  ![Ordenar produtos por nome de A a Z](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20A%20a%20Z.gif)
 
   ``` Gherkin
   Scenario: Ordenar produtos por nome de Z a A
@@ -164,10 +161,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o primeiro produto deve ter o nome que começa com a maior letra alfabética disponível
   ```
 
-  ![Ordenar produtos por nome de Z a
-  A](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20Z%20a%20A.gif)
+  ![Ordenar produtos por nome de Z a A](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20Z%20a%20A.gif)
 
-  - [ ] [1.2.3 Fluxo completo de compra (do carrinho até
+- [ ] [1.2.3 Fluxo completo de compra (do carrinho até
   finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
 
   ``` Gherkin
@@ -259,7 +255,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
     ![Confirmar detalhes do pedido após a finalização](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
-  - [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
+- [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
 
   ``` Gherkin
   Feature: Remoção de itens do carrinho
@@ -320,7 +316,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
-  - [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
+- [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
   ``` Gherkin
   Feature: Navegação entre páginas
@@ -344,6 +340,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ser redirecionado para a página de detalhes do "Produto A"
   ```
 
+  ![Navegar da página de listagem de produtos para a página de detalhes de um produto](/IMAGEM/2.1%20Cenario%20UI/Navegar/Navegar%20da%20página%20de%20listagem%20de%20produtos%20para%20a%20página%20de%20detalhes%20de%20um%20produto.gif)
+
   ``` Gherkin
   Scenario: Navegar de volta da página de detalhes para a página de listagem de produtos
   Given o usuário está na página de detalhes do "Produto A"
@@ -351,11 +349,13 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ser redirecionado para a página de listagem de produtos
   ```
 
+  ![Navegar de volta da página de detalhes para a página de listagem de produtos](/IMAGEM/2.1%20Cenario%20UI/Navegar/Navegar%20de%20volta%20da%20página%20de%20detalhes%20para%20a%20página%20de%20listagem%20de%20produtos.gif)
+
   ``` Gherkin
   Scenario: Navegar do carrinho para a finalização da compra
   Given o usuário tem itens no carrinho
-  When ele clica na opção "Finalizar compra"
-  Then ele deve ser redirecionado para a página de finalização da compra
+  When ele clica na opção "Finalizar compra" :lady_beetle:
+  Then ele deve ser redirecionado para a página de finalização da compra :lady_beetle:
   ```
 
   ``` Gherkin
@@ -368,11 +368,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ``` Gherkin
   Scenario: Verificar navegação para página de confirmação após finalização da compra
   Given o usuário finalizou a compra com sucesso
-  When ele é redirecionado para a página de confirmação de pedido
-  Then ele deve ver a mensagem de confirmação e os detalhes do pedido
+  When ele é redirecionado para a página de confirmação de pedido :lady_beetle:
+  Then ele deve ver a mensagem de confirmação e os detalhes do pedido :lady_beetle:
   ```
 
-  - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
+- [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
   ``` Gherkin
   Feature: Logout pelo menu
