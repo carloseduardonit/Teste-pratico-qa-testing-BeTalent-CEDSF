@@ -307,6 +307,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And a mensagem "Seu carrinho está vazio" deve ser exibida
   ```
 
+  ![Verificar se o carrinho está vazio após remoção de todos os itens](/IMAGEM/2.1%20Cenario%20UI/Remover/)
+
   ``` Gherkin
   Scenario: Cancelar remoção de item do carrinho
   Given o usuário tem o produto "Produto A" no carrinho
@@ -315,6 +317,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then o produto "Produto A" deve permanecer no carrinho
   And o valor total do carrinho não deve ser alterado
   ```
+  
+  ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
   - [ ] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
