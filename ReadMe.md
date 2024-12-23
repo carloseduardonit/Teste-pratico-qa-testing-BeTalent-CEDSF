@@ -354,9 +354,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ``` Gherkin
   Scenario: Navegar do carrinho para a finalização da compra
   Given o usuário tem itens no carrinho
-  When ele clica na opção "Finalizar compra" :lady_beetle:
-  Then ele deve ser redirecionado para a página de finalização da compra :lady_beetle:
+  When ele clica na opção "Finalizar compra" 
+  Then ele deve ser redirecionado para a página de finalização da compra 
   ```
+
+  :lady_beetle:
 
   ``` Gherkin
   Scenario: Navegar para a página de login a partir da página de carrinho
@@ -368,9 +370,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ``` Gherkin
   Scenario: Verificar navegação para página de confirmação após finalização da compra
   Given o usuário finalizou a compra com sucesso
-  When ele é redirecionado para a página de confirmação de pedido :lady_beetle:
-  Then ele deve ver a mensagem de confirmação e os detalhes do pedido :lady_beetle:
+  When ele é redirecionado para a página de confirmação de pedido 
+  Then ele deve ver a mensagem de confirmação e os detalhes do pedido 
   ```
+  
+ :lady_beetle:
 
 - [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
