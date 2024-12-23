@@ -293,7 +293,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o valor total do carrinho deve ser ajustado para refletir o preço do "Produto B"
   ```
 
-  :lady_beetle: Não  possui o campo valor total [^1]
+  :lady_beetle: Não  possui o campo valor total[^1].
 
   ``` Gherkin
   Scenario: Verificar se o carrinho está vazio após remoção de todos os itens
@@ -427,7 +427,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
-  - :lady_beetle: [^1]: Não tem um campo de somatorio dos produtos no carrinho
+  - :lady_beetle:[^1]: Não tem um campo de somatorio dos produtos no carrinho
   ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
   - :lady_beetle:
   - :lady_beetle:
