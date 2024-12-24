@@ -40,8 +40,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 1.2 Cenários mínimos a serem testados
 
-- [X] [1.2.1 Login com diferentes tipos de usuários
-  disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
+#### [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
 
   ``` Gherkin
   Feature: Login de usuários no sistema
@@ -60,7 +59,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   |05 |error_user |secret_sauce |
   |06 |visual_user |secret_sauce |
 
-#### Login bem-sucedido com usuário padrão
+##### 1.2.1.1 Login bem-sucedido com usuário padrão
 
   ``` Gherkin
   Scenario: Login bem-sucedido com usuário padrão
@@ -71,9 +70,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![standard_user](/IMAGEM/2.1%20Cenario%20UI/Login/standard_user.gif)
 
- ---
-
-#### Login bloqueado com usuário locked_out_user
+##### 1.2.1.2 Login bloqueado com usuário locked_out_user
 
   ``` Gherkin
   Scenario: Login bloqueado com usuário locked_out_user
@@ -84,6 +81,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
 
+###### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
+
   ``` Gherkin
   Scenario: Problemas ao acessar o sistema com usuário problem_user
   Given o usuário está na página de login "https://www.saucedemo.com/"
@@ -92,6 +91,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![problem_user](/IMAGEM/2.1%20Cenario%20UI/Login/problem_user.gif)
+
+###### 1.2.1.4 Performance lenta com usuário performance_glitch_user
 
   ``` Gherkin
   Scenario: Performance lenta com usuário performance_glitch_user
@@ -102,6 +103,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)
 
+###### 1.2.1.5 Erros ao acessar com usuário error_user
+
   ``` Gherkin
   Scenario: Erros ao acessar com usuário error_user
   Given o usuário está na página de login "https://www.saucedemo.com/"
@@ -110,6 +113,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)
+
+##### 1.2.1.5 Validar impacto visual com usuário visual_user
 
   ``` Gherkin
   Scenario: Validar impacto visual com usuário visual_user
