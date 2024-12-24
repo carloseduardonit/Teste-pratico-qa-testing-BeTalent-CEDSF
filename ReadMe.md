@@ -81,7 +81,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
 
-###### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
+##### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
 
   ``` Gherkin
   Scenario: Problemas ao acessar o sistema com usuário problem_user
