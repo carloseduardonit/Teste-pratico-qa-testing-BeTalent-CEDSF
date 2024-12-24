@@ -451,6 +451,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
 
   - [ ] 1.3.1.5 Análise de riscos da aplicação
+  
 - [ ] 1.3.2 Extras (diferenciais):
   - [ ] 1.3.2.1 Testes de responsividade
   - [ ] 1.3.2.2 Testes de acessibilidade
