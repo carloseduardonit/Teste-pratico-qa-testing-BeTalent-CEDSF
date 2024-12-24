@@ -114,7 +114,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![error_user](/IMAGEM/2.1%20Cenario%20UI/Login/error_user.gif)
 
-##### 1.2.1.5 Validar impacto visual com usuário visual_user
+##### 1.2.1.6 Validar impacto visual com usuário visual_user
 
   ``` Gherkin
   Scenario: Validar impacto visual com usuário visual_user
@@ -125,7 +125,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
 
-- [X] [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
+#### [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
 
   ``` Gherkin
   Feature: Ordenação e filtragem de produtos
@@ -133,6 +133,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Quero ordenar e filtrar os produtos
   Para facilitar a busca pelo item desejado
   ```
+
+##### 1.2.2.1 Ordenar produtos por preço ascendente
 
   ``` Gherkin
   Scenario: Ordenar produtos por preço ascendente
@@ -143,6 +145,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Ordenar produtos por preço ascendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20ascendente.gif)
 
+##### 1.2.2.2 Ordenar produtos por preço descendente
+
   ``` Gherkin
   Scenario: Ordenar produtos por preço descendente
   Given o usuário está na página de listagem de produtos
@@ -151,6 +155,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Ordenar produtos por preçodescendente](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20preço%20descendente.gif)
+
+##### 1.2.2.3 Ordenar produtos por nome de A a Z
 
   ``` Gherkin
   Scenario: Ordenar produtos por nome de A a Z
@@ -162,6 +168,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Ordenar produtos por nome de A a Z](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20A%20a%20Z.gif)
+
+##### 1.2.2.4 Ordenar produtos por nome de Z a A
 
   ``` Gherkin
   Scenario: Ordenar produtos por nome de Z a A
@@ -438,10 +446,10 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
-  - :lady_beetle:[^1]: Não tem um campo de somatorio dos produtos no carrinho
+
+ [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
   ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
-  - :lady_beetle:
-  - :lady_beetle:
+
   - [ ] 1.3.1.5 Análise de riscos da aplicação
 - [ ] 1.3.2 Extras (diferenciais):
   - [ ] 1.3.2.1 Testes de responsividade
