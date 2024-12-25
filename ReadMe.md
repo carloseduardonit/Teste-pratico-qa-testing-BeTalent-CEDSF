@@ -182,8 +182,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Ordenar produtos por nome de Z a A](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20Z%20a%20A.gif)
 
-- [ ] [1.2.3 Fluxo completo de compra (do carrinho até
-  finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
+- [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
 
   ``` Gherkin
   Feature: Fluxo completo de compra
@@ -191,6 +190,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Quero adicionar produtos ao carrinho e finalizar a compra
   Para concluir a minha compra com sucesso
   ```
+
+##### 1.2.3.1 Adicionar produto ao carrinho e finalizar a compra
 
   ``` Gherkin
   Scenario: Adicionar produto ao carrinho e finalizar a compra
@@ -202,6 +203,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Adicionar produto ao carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Adicionar%20produto%20ao%20carrinho.gif)
 
+##### 1.2.3.2 Verificar itens no carrinho antes de finalizar a compra
+
   ``` Gherkin
   Scenario: Verificar itens no carrinho antes de finalizar a compra
   Given o usuário adicionou o "Produto A" ao carrinho
@@ -212,6 +215,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Verificar itens no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Verificar%20itens%20no%20carrinho.gif)
 
+##### 1.2.3.3 Remover produto do carrinho
+
   ``` Gherkin
   Scenario: Remover produto do carrinho
   Given o usuário tem o produto "Produto A" no carrinho
@@ -221,6 +226,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Remover produto do carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Remover%20produto%20do%20carrinho.gif)
+
+##### 1.2.3.4 Finalizar compra com sucesso
 
   ``` Gherkin
   Scenario: Finalizar compra com sucesso
@@ -233,6 +240,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Finalizar compra com sucesso](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
+##### 1.2.3.5 Verificar erro ao tentar finalizar compra sem itens no carrinho
+
   ``` Gherkin
   Scenario: Verificar erro ao tentar finalizar compra sem itens no carrinho
   Given o usuário não tem produtos no carrinho
@@ -243,16 +252,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Verificar erro ao tentar finalizar compra sem itens no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
-  ``` Gherkin
-  Scenario: Aplicar código de desconto no carrinho
-  Given o usuário tem o "Produto A" no carrinho
-  And ele possui um código de desconto válido
-  When ele aplica o código de desconto no carrinho
-  Then o valor total do carrinho deve ser reduzido de acordo com o desconto
-  And o usuário deve ver o valor do desconto aplicado
-  ```
-
-  ![Aplicar código de desconto no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+##### 1.2.3.6 Aplicar código de desconto no carrinho
 
   ``` Gherkin
   Scenario: Aplicar código de desconto no carrinho
@@ -264,6 +264,21 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Aplicar código de desconto no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+
+##### 1.2.3.7 Aplicar código de desconto no carrinho
+
+  ``` Gherkin
+  Scenario: Aplicar código de desconto no carrinho
+  Given o usuário tem o "Produto A" no carrinho
+  And ele possui um código de desconto válido
+  When ele aplica o código de desconto no carrinho
+  Then o valor total do carrinho deve ser reduzido de acordo com o desconto
+  And o usuário deve ver o valor do desconto aplicado
+  ```
+
+  ![Aplicar código de desconto no carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+
+##### 1.2.3.8 Confirmar detalhes do pedido após a finalização
 
   ``` Gherkin
   Scenario: Confirmar detalhes do pedido após a finalização
@@ -272,7 +287,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ver os detalhes do pedido, incluindo os produtos comprados, o valor total e a estimativa de entrega
   ```
 
-    ![Confirmar detalhes do pedido após a finalização](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
+  ![Confirmar detalhes do pedido após a finalização](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
 - [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
 
@@ -282,6 +297,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Quero remover itens do meu carrinho
   Para atualizar a lista de produtos antes de finalizar a compra
   ```
+
+##### 1.2.4.1 Remover um único item do carrinho
 
   ``` Gherkin
   Scenario: Remover um único item do carrinho
@@ -293,6 +310,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Remover produto do carrinho](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/Remover%20produto%20do%20carrinho.gif)
 
+##### 1.2.4.2 Remover múltiplos itens do carrinho
+
   ``` Gherkin
   Scenario: Remover múltiplos itens do carrinho
   Given o usuário tem os produtos "Produto A" e "Produto B" no carrinho
@@ -302,6 +321,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Remover múltiplos itens do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/Remover%20múltiplos%20itens%20do%20carrinho.gif)
+
+##### 1.2.4.3 Verificar atualização do valor após remoção
 
   ``` Gherkin
   Scenario: Verificar atualização do valor após remoção
@@ -313,8 +334,10 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   :lady_beetle: Não  possui o campo valor total[^1].
-  
+
   ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
+
+##### 1.2.4.4 Verificar se o carrinho está vazio após remoção de todos os itens
 
   ``` Gherkin
   Scenario: Verificar se o carrinho está vazio após remoção de todos os itens
@@ -325,6 +348,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Verificar se o carrinho está vazio após remoção de todos os itens](/IMAGEM/2.1%20Cenario%20UI/Remover/)
+
+##### 1.2.4.5 Cancelar remoção de item do carrinho
 
   ``` Gherkin
   Scenario: Cancelar remoção de item do carrinho
