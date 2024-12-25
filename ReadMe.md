@@ -313,6 +313,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   :lady_beetle: Não  possui o campo valor total[^1].
+  
+  ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
 
   ``` Gherkin
   Scenario: Verificar se o carrinho está vazio após remoção de todos os itens
@@ -446,12 +448,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 1.3.1.2 Resultados dos testes executados
   - [ ] 1.3.1.3 Sugestões de melhorias de UX/UI
   - [ ] 1.3.1.4 Lista de bugs encontrados (se houver)
-
- [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
-  ![campo de somatorio](/IMAGEM/2.1%20Cenario%20UI/BUG/campo%20de%20somatorio.png)
-
   - [ ] 1.3.1.5 Análise de riscos da aplicação
-  
+
 - [ ] 1.3.2 Extras (diferenciais):
   - [ ] 1.3.2.1 Testes de responsividade
   - [ ] 1.3.2.2 Testes de acessibilidade
@@ -596,3 +594,4 @@ Enviar entregáveis
 </details>
 
 ---------------------------------
+[^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
