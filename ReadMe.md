@@ -34,13 +34,13 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 1.1 Instruções
 
-- [ ] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação
-- [ ] 1.1.2 Execute os testes manualmente e documente os resultados
-- [ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário
+- **[X] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação**
+- **[ ] 1.1.2 Execute os testes manualmente e documente os resultados**
+- **[ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário**
 
 ### 1.2 Cenários mínimos a serem testados
 
-#### [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
+#### [X] [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
 
   ``` Gherkin
   Feature: Login de usuários no sistema
@@ -59,7 +59,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   |05 |error_user |secret_sauce |
   |06 |visual_user |secret_sauce |
 
-##### 1.2.1.1 Login bem-sucedido com usuário padrão
+##### [X] 1.2.1.1 Login bem-sucedido com usuário padrão
 
   ``` Gherkin
   Scenario: Login bem-sucedido com usuário padrão
@@ -92,7 +92,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![problem_user](/IMAGEM/2.1%20Cenario%20UI/Login/problem_user.gif)
 
-###### 1.2.1.4 Performance lenta com usuário performance_glitch_user
+##### 1.2.1.4 Performance lenta com usuário performance_glitch_user
 
   ``` Gherkin
   Scenario: Performance lenta com usuário performance_glitch_user
@@ -103,7 +103,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![performance_glitch_user](/IMAGEM/2.1%20Cenario%20UI/Login/performance_glitch_user.gif)
 
-###### 1.2.1.5 Erros ao acessar com usuário error_user
+##### 1.2.1.5 Erros ao acessar com usuário error_user
 
   ``` Gherkin
   Scenario: Erros ao acessar com usuário error_user
@@ -182,7 +182,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Ordenar produtos por nome de Z a A](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20Z%20a%20A.gif)
 
-- [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
+#### [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
 
   ``` Gherkin
   Feature: Fluxo completo de compra
@@ -438,7 +438,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   :lady_beetle:
 
-- [X] [1.2.6 Logout](/features/1.2.6%20Logout.feature)
+#### [1.2.6 Logout](/features/1.2.6%20Logout.feature)
 
   ``` Gherkin
   Feature: Logout pelo menu
