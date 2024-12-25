@@ -371,6 +371,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Para explorar os produtos e realizar minha compra de forma eficiente
   ```
 
+##### 1.2.5.1 Navegar da página inicial para a listagem de produtos
+
   ``` Gherkin
   Scenario: Navegar da página inicial para a listagem de produtos
   Given o usuário está na página inicial
@@ -379,6 +381,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   :lady_beetle:
+
+##### 1.2.5.2 Navegar da página de listagem de produtos para a página de detalhes de um produto
 
   ``` Gherkin
   Scenario: Navegar da página de listagem de produtos para a página de detalhes de um produto
@@ -390,6 +394,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Navegar da página de listagem de produtos para a página de detalhes de um produto](/IMAGEM/2.1%20Cenario%20UI/Navegar/Navegar%20da%20página%20de%20listagem%20de%20produtos%20para%20a%20página%20de%20detalhes%20de%20um%20produto.gif)
 
+##### 1.2.5.3 Navegar de volta da página de detalhes para a página de listagem de produtos
+
   ``` Gherkin
   Scenario: Navegar de volta da página de detalhes para a página de listagem de produtos
   Given o usuário está na página de detalhes do "Produto A"
@@ -398,6 +404,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Navegar de volta da página de detalhes para a página de listagem de produtos](/IMAGEM/2.1%20Cenario%20UI/Navegar/Navegar%20de%20volta%20da%20página%20de%20detalhes%20para%20a%20página%20de%20listagem%20de%20produtos.gif)
+
+##### 1.2.5.4 Navegar do carrinho para a finalização da compra
 
   ``` Gherkin
   Scenario: Navegar do carrinho para a finalização da compra
@@ -408,6 +416,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   :lady_beetle:
 
+##### 1.2.5.5 Navegar para a página de login a partir da página de carrinho
+
   ``` Gherkin
   Scenario: Navegar para a página de login a partir da página de carrinho
   Given o usuário não está logado
@@ -416,6 +426,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   :lady_beetle:
+
+##### 1.2.5.6 Verificar navegação para página de confirmação após finalização da compra
 
   ``` Gherkin
   Scenario: Verificar navegação para página de confirmação após finalização da compra
@@ -435,6 +447,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Para encerrar minha sessão com segurança
   ```
 
+##### 1.2.6.1 Logout com sucesso pelo menu
+
   ``` Gherkin
   Scenario: Logout com sucesso pelo menu
   Given o usuário está logado no sistema
@@ -447,6 +461,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Logout com sucesso pelo menu](/IMAGEM/2.1%20Cenario%20UI/Logout/Logout%20com%20sucesso%20pelo%20menu.gif)
 
+##### 1.2.6.2 Menu não visível para usuários não autenticados
+
   ``` Gherkin
   Scenario: Menu não visível para usuários não autenticados
   Given o usuário não está logado no sistema
@@ -454,8 +470,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then o menu de logout não deve ser exibido
   ```
 
-  ![Menu não visível para usuários não
-  autenticados](/IMAGEM/2.1%20Cenario%20UI/Logout/Menu%20não%20visível%20para%20usuários%20não%20autenticados.png)
+  ![Menu não visível para usuários não autenticados](/IMAGEM/2.1%20Cenario%20UI/Logout/Menu%20não%20visível%20para%20usuários%20não%20autenticados.png)
+
+##### 1.2.6.3 Verificar existência da opção de logout no menu
 
   ``` Gherkin
   Scenario: Verificar existência da opção de logout no menu
