@@ -34,9 +34,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 1.1 Instruções
 
-- **[X] 1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação**
-- **[ ] 1.1.2 Execute os testes manualmente e documente os resultados**
-- **[ ] 1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário**
+- [X] **1.1.1 Crie um plano de testes documentado que cubra os principais fluxos da aplicação**
+- [ ] **1.1.2 Execute os testes manualmente e documente os resultados**
+- [ ] **1.1.3 Identifique potenciais problemas de UX/UI que poderiam impactar negativamente a experiência do usuário**
 
 ### 1.2 Cenários mínimos a serem testados
 
@@ -182,7 +182,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Ordenar produtos por nome de Z a A](/IMAGEM/2.1%20Cenario%20UI/Ordenar/Ordenar%20produtos%20por%20nome%20de%20Z%20a%20A.gif)
 
-#### - [ ] [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
+#### [1.2.3 Fluxo completo de compra (do carrinho até finalização)](/features/1.2.3%20Fluxo%20completo%20de%20compra%20do%20carrinho%20até%20finalização.feature)
 
   ``` Gherkin
   Feature: Fluxo completo de compra
@@ -289,7 +289,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Confirmar detalhes do pedido após a finalização](/IMAGEM/2.1%20Cenario%20UI/FluxoCompleto/)
 
-- [ ] [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
+#### [1.2.4 Remoção de itens do carrinho](/features/1.2.4%20Remoção%20de%20itens%20do%20carrinho.feature)
 
   ``` Gherkin
   Feature: Remoção de itens do carrinho
@@ -362,7 +362,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
-- [V] [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
+#### [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
   ``` Gherkin
   Feature: Navegação entre páginas
@@ -414,6 +414,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then ele deve ser redirecionado para a página de finalização da compra 
   ```
 
+  ![Bug do botão "Finalizar compra"](/IMAGEM/2.1%20Cenario%20UI/BUG/Bug%20do%20botão%20Finalizar%20compra.png)
   :lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar" [^2]
 
 ##### 1.2.5.5 Navegar para a página de login a partir da página de carrinho
@@ -504,7 +505,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 1.4.3 Capacidade de identificar eventuais bugs/problemas
   - [ ] 1.4.4 Qualidade das sugestões de melhoria
   - [ ] 1.4.5 Pensamento crítico sobre eventuais riscos e impactos no negócio
-  - Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING
+  :lady_beetle: Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING[^3]
   ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
 ### 1.5 Observações
@@ -638,3 +639,4 @@ Enviar entregáveis
 ---------------------------------
 [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
 [^2]::lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar"
+[^3]::lady_beetle: Foi dificl obter as credências dos usuarios
