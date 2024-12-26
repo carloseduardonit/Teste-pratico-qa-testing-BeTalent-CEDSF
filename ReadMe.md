@@ -40,7 +40,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 1.2 Cenários mínimos a serem testados
 
-#### [X] [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
+#### [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
 
   ``` Gherkin
   Feature: Login de usuários no sistema
@@ -59,7 +59,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   |05 |error_user |secret_sauce |
   |06 |visual_user |secret_sauce |
 
-##### [X] 1.2.1.1 Login bem-sucedido com usuário padrão
+##### 1.2.1.1 Login bem-sucedido com usuário padrão
 
   ``` Gherkin
   Scenario: Login bem-sucedido com usuário padrão
@@ -410,11 +410,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ``` Gherkin
   Scenario: Navegar do carrinho para a finalização da compra
   Given o usuário tem itens no carrinho
-  When ele clica na opção "Finalizar compra" 
+  When ele clica no botão "Finalizar compra" 
   Then ele deve ser redirecionado para a página de finalização da compra 
   ```
 
-  :lady_beetle:
+  :lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar" [^2]
 
 ##### 1.2.5.5 Navegar para a página de login a partir da página de carrinho
 
@@ -637,3 +637,4 @@ Enviar entregáveis
 
 ---------------------------------
 [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
+[^2]::lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar"
