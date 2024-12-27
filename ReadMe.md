@@ -29,7 +29,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 ## 1. UI TESTING
 
   </summary>
-  A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com). Suponha que a plataforma
+  A tarefa aqui é testar a plataforma de e-commerce [Sauce Demo](https://www.saucedemo.com) . Suponha que a plataforma
   precisa passar por uma validação completa antes de ser lançada em produção e cabe a você testá-la.
 
 ### 1.1 Instruções
@@ -58,6 +58,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   |04 |performance_glitch_user |secret_sauce |
   |05 |error_user |secret_sauce |
   |06 |visual_user |secret_sauce |
+
+ :lady_beetle: Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING[^3]
+  ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
 ##### 1.2.1.1 Login bem-sucedido com usuário padrão
 
@@ -371,6 +374,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Para explorar os produtos e realizar minha compra de forma eficiente
   ```
 
+|Local|Caminho|
+|:----|:------|
+|Login|[saucedemo](https://www.saucedemo.com)|
+|Seu carrinho|[saucedemo/cart](https://www.saucedemo.com/cart.html)|
+|Home|[Home](https://www.saucedemo.com/inventory.html)|
+
 ##### 1.2.5.1 Navegar da página inicial para a listagem de produtos
 
   ``` Gherkin
@@ -505,14 +514,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 1.4.3 Capacidade de identificar eventuais bugs/problemas
   - [ ] 1.4.4 Qualidade das sugestões de melhoria
   - [ ] 1.4.5 Pensamento crítico sobre eventuais riscos e impactos no negócio
-  :lady_beetle: Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING[^3]
-  ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
 ### 1.5 Observações
 
-- [ ] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
-- [ ] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
-- [ ] 1.5.3 Inclua prints de tela quando relevante
+- [X] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
+- [X] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
+- [X] 1.5.3 Inclua prints de tela quando relevante
 
 </details>
 
