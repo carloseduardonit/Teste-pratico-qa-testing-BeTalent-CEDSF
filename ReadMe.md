@@ -350,8 +350,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And a mensagem "Seu carrinho está vazio" deve ser exibida
   ```
 
-  ![Verificar se o carrinho está vazio após remoção de todos os itens](/IMAGEM/2.1%20Cenario%20UI/Remover/)
-
+  :lady_beetle: a mensagem "Seu carrinho está vazio" não esta sendo exibida[^5]
+  ![a mensagem "Seu carrinho está vazio" não esta sendo exibida](/IMAGEM/2.1%20Cenario%20UI/BUG/a%20mensagem%20Seu%20carrinho%20está%20vazio%20deve%20ser%20exibida.png)
+  
 ##### 1.2.4.5 Cancelar remoção de item do carrinho
 
   ``` Gherkin
@@ -364,7 +365,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   :lady_beetle:Não  foi possivel  fazer o cancelamento da Exclusão[^4] [^1]
-  
+
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
 #### [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
@@ -650,3 +651,4 @@ Enviar entregáveis
 [^2]::lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar"
 [^3]::lady_beetle: Foi dificl obter as credências dos usuarios
 [^4]::lady_beetle: Não existe a opção de  cancelamento  da exclusão e o mesmo exclui direito  sem a confimação  do usuario
+[^5]::lady_beetle: Ao excluir todos os itens a mensagem não é exibida.
