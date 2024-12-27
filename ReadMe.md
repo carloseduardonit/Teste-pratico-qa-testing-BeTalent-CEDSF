@@ -362,7 +362,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Then o produto "Produto A" deve permanecer no carrinho
   And o valor total do carrinho não deve ser alterado
   ```
-  
+
+  :lady_beetle:Não  foi possivel  fazer o cancelamento da Exclusão[^4] [^1]
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
 
 #### [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
@@ -647,3 +648,4 @@ Enviar entregáveis
 [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
 [^2]::lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar"
 [^3]::lady_beetle: Foi dificl obter as credências dos usuarios
+[^4]::lady_beetle: Não existe a opção de  cancelamento  da exclusão e o mesmo exclui direito  sem a confimação  do usuario
