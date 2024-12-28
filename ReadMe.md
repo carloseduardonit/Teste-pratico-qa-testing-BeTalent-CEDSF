@@ -366,7 +366,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   :lady_beetle:Não  foi possivel  fazer o cancelamento da Exclusão[^4] [^1]
 
-  ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/Remover/)
+  ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/BUG/Cancelar%20remoção%20de%20item%20do%20carrinho.gif)
 
 #### [1.2.5 Navegação entre páginas](/features/1.2.5%20Navegação%20entre%20páginas.feature)
 
