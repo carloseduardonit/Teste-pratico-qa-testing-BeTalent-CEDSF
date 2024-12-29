@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
+    "run" :"run cypress",
     "test1": " playwright test --ui"
   },
   "author": "",
@@ -12,11 +13,11 @@
   "devDependencies": {
     "@playwright/test": "^1.49.0",
     "@types/node": "^22.10.1",
-    "cypress": "^13.16.1"
+    "cypress": "^13.17.0"
   },
   "dependencies": {
     "cucumber": "^6.0.7",
-    "selenium-webdriver": "^4.27.0",
-    "mocha": "^10.8.2"
+    "mocha": "^10.8.2",
+    "selenium-webdriver": "^4.27.0"
   }
 }
