@@ -14,11 +14,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 > - Eu não conseguir finalizar no dia 26/11/2024 foi devido:
 > - Computador travando
 >   - pedir alguns prints no teste de API
-> - Dor no estomago
+> - Dor no estômago
 > - Estudo concorrente:
 >   - Semana de Prova da faculdade
 >   - [Prova de certificação Salesforce](https://www.linkedin.com/feed/update/urn:li:activity:7275676610475798530/)
-> - Clique nos Titulos abaixo para ver os paragrafos conforme a demostração: :point_down:
+> - Clique nos titulos abaixo para ver os paragrafos conforme a demostração: :point_down:
 
 <img src="/IMAGEM/demostracao.gif" alt="Demostração de com fazer">
 
@@ -50,16 +50,16 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   Para validar os comportamentos específicos de cada tipo de usuário
 
-  |ID |Usuario |Senha |
-  |---:| :---: |:---: |
-  |01 |standard_user |secret_sauce |
-  |02 |locked_out_user |secret_sauce |
-  |03 |problem_user |secret_sauce |
-  |04 |performance_glitch_user |secret_sauce |
-  |05 |error_user |secret_sauce |
-  |06 |visual_user |secret_sauce |
+  |  ID   |        Usuario          |   Senha      |
+  |:-----:|:-----------------------:|:------------:|
+  |  01   |      standard_user      | secret_sauce |
+  |  02   |     locked_out_user     | secret_sauce |
+  |  03   |      problem_user       | secret_sauce |
+  |  04   | performance_glitch_user | secret_sauce |
+  |  05   |       error_user        | secret_sauce |
+  |  06   |       visual_user       | secret_sauce |
 
- :lady_beetle: Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING[^3]
+ :lady_beetle: Tive dificuldade para obter os usuários e senha para o teste do UI TESTING[^3]
   ![alt text](/IMAGEM/3.1%20dificuldade/Usuario%20e%20%20Senha.png)
 
 ##### 1.2.1.1 Login bem-sucedido com usuário padrão
@@ -81,9 +81,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   When ele insere o nome de usuário "locked_out_user" e a senha "secret_sauce"
   Then ele deve ver a mensagem "Epic sadface: Sorry, this user has been locked out."
   ```
-
+  
+  **Teste Manual**
   ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
 
+  **Teste automatizado Cypress**
+  
 ##### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
 
   ``` Gherkin
@@ -127,6 +130,15 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![visual_user](/IMAGEM/2.1%20Cenario%20UI/Login/visual_user.gif)
+
+##### 1.2.1.7 Validar o não preenchimento campo "Nome Usuario"
+
+ ``` Gherkin
+  Scenario: Login bloqueado com usuário locked_out_user
+  Given o usuário está na página de login "https://www.saucedemo.com/"
+  When ele insere apenas a senha "secret_sauce"
+  Then ele deve ver a mensagem "Epic sadface: Username is required"
+  ```
 
 #### [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
 
@@ -364,7 +376,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   And o valor total do carrinho não deve ser alterado
   ```
 
-  :lady_beetle:Não  foi possivel  fazer o cancelamento da Exclusão[^4] [^1]
+  :lady_beetle:Não foi possivel fazer o cancelamento da Exclusão[^4] [^1]
 
   ![Cancelar remoção de item do carrinho](/IMAGEM/2.1%20Cenario%20UI/BUG/Cancelar%20remoção%20de%20item%20do%20carrinho.gif)
 
@@ -377,11 +389,11 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   Para explorar os produtos e realizar minha compra de forma eficiente
   ```
 
-|Local|Caminho|
-|:----|:------|
-|Login|[saucedemo](https://www.saucedemo.com)|
-|Seu carrinho|[saucedemo/cart](https://www.saucedemo.com/cart.html)|
-|Home|[Home](https://www.saucedemo.com/inventory.html)|
+| Local        | Caminho                                               |
+|:-------------|:------------------------------------------------------|
+| Login        | [saucedemo](https://www.saucedemo.com)                |
+| Seu carrinho | [saucedemo/cart](https://www.saucedemo.com/cart.html) |
+| Home         | [Home](https://www.saucedemo.com/inventory.html)      |
 
 ##### 1.2.5.1 Navegar da página inicial para a listagem de produtos
 
@@ -427,9 +439,9 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   ```
 
   ![Bug do botão "Finalizar compra"](/IMAGEM/2.1%20Cenario%20UI/BUG/Bug%20do%20botão%20Finalizar%20compra.png)
-  :lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar" [^2]
+  :lady_beetle: O texto do botão está incorreto deveria ser "Finalizar compra" e estar "Confirar" [^2]
 
-##### 1.2.5.5 Navegar para a página de login a partir da página de carrinho
+##### 1.2.5.5 Navegar para a página de ‘login’ a partir da página de carrinho
 
   ``` Gherkin
   Scenario: Navegar para a página de login a partir da página de carrinho
@@ -474,7 +486,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
   ![Logout com sucesso pelo menu](/IMAGEM/2.1%20Cenario%20UI/Logout/Logout%20com%20sucesso%20pelo%20menu.gif)
 
-##### 1.2.6.2 Menu não visível para usuários não autenticados
+##### 1.2.6.2 Menu não visível para utilizadores não autenticados
 
   ``` Gherkin
   Scenario: Menu não visível para usuários não autenticados
@@ -521,7 +533,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 ### 1.5 Observações
 
 - [X] 1.5.1 A documentação deve ser entregue obrigatoriamente em Markdown (.md)
-- [X] 1.5.2 Quando considerar necessário, explique/justifique suas decisões
+- [X] 1.5.2 Quando considerar necessário, explique/justifique a suas decisões
 - [X] 1.5.3 Inclua prints de tela quando relevante
 
 </details>
@@ -570,7 +582,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   [Depois](/JSON/2-2%20cenarios/2.2.2%20Gestão%20de%20reservas/Depois%202.2.2.4%20Atualizar%20uma%20reserva%20existente.json)}
   ![Antes de Atualizar uma reserva
   existente](/IMAGEM/2.2%20cenario%20API/2.2.2%20Gestão%20de%20reservas/Antes%20de%20Atualizar%20uma%20reserva%20existente.png)
-  - [X] 2.2.2.5 Deletar uma reserva
+  - [X] 2.2.2.5 Deleter uma reserva
 - [ ] 2.2.3 Filtros e buscas:
   - [ ] 2.2.3.1 Buscar reservas por nome
   - [ ] 2.2.3.2 Buscar reservas por data de check-in
@@ -593,7 +605,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   - [ ] 2.4.4 Códigos de resposta HTTP
 
 - [ ] 2.5 Observações:
-  - [ ] 2.6.1 Use Postman ou qualquer outra ferramenta de sua preferência
+  - [ ] 2.6.1 Use Postman ou qualquer outra ferramenta da sua preferência
   - [ ] 2.6.2 Documente quaisquer premissas assumidas, se possível
 
 </details>
@@ -612,7 +624,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 3.2 Relate na documentação quais foram as dificuldades encontradas
 
-- Tive dificuldade para obter os usuarios e senha para o teste do UI TESTING
+- Tive dificuldade para obter os usuários e senha para o teste do UI TESTING
 
 ### 3.3 Documente o que foi implementado e o que ficou pendente
 
@@ -625,7 +637,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 ## 4. Envio dos entregáveis
 
   </summary>
-  Os entregáveis de ambos os testes deverão ser hospedados em um repositório no seu GitHub. O link do repositório deverá
+  Os entregáveis de ambos os testes deverão ser hospedados num repositório no seu GitHub. O link do repositório deverá
   ser fornecido por meio deste formulário. Não serão aceitos links de entregáveis enviados por outros meios.
 </details>
 
@@ -648,7 +660,7 @@ Enviar entregáveis
 
 ---------------------------------
 [^1]::lady_beetle: Não tem um campo de somatorio dos produtos no carrinho
-[^2]::lady_beetle: O texto do botão esta incorreto deveria ser "Finalizar compra" e estar "Confirar"
-[^3]::lady_beetle: Foi dificl obter as credências dos usuarios
-[^4]::lady_beetle: Não existe a opção de  cancelamento  da exclusão e o mesmo exclui direito  sem a confimação  do usuario
+[^2]::lady_beetle: O texto do botão está incorreto deveria ser "Finalizar compra" e estar "Confirar"
+[^3]::lady_beetle: Foi dificil obter as credências dos usuários
+[^4]::lady_beetle: Não existe a opção de cancelamento da exclusão e o mesmo exclui direito sem a confimação do usuário
 [^5]::lady_beetle: Ao excluir todos os itens a mensagem não é exibida.
