@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("usuario", () => {
+  
+    cy.visit('/');
+    
+    cy.get('[data-test="username"]').type("standard_user"); 
+    cy.get('[data-test="password"]').type("secret_sauce"); 
+
+    cy.get("[data-test='login-button']").click();
+    
+    cy.url().should("include", "/inventory");
+    cy.get('[data-test="inventory-item-sauce-labs-backpack-img"]')
+      .should("be.visible")
+      .should("have.attr", "src", "/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg");
+})

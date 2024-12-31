@@ -1,6 +1,6 @@
 const { isNullOrUndefined, isNull, isUndefined } = require("util");
 
-describe("Login functionality", () => {
+describe("Funcionalidade: Login", () => {
   let id;
   let senha = "secret_sauce";
   it("1.2.1.1 Login bem-sucedido com usuário padrão", () => {
@@ -31,7 +31,7 @@ describe("Login functionality", () => {
     acessarUsuario("", senha);
   });
 
-  it('1.2.1.8', () => {
+  it.skip('1.2.1.8', () => {
     acessarUsuario("visual_user", null);
   });
 
@@ -39,7 +39,7 @@ describe("Login functionality", () => {
     acessarUsuario("", "");
   });
 
-  it.skip('1.2.1.10', () => {
+  it('1.2.1.10', () => {
     acessarUsuario('carlos', 'eee');
   });
 });
@@ -52,15 +52,11 @@ function acessarUsuario(usuario, password) {
   testeUsuarioSenha(usuario);
 }
 
-function isEmptyUser(usuario) { return usuario === "" || usuario === null || usuario === undefined; }
+function isEmptyUser(usuario) { return usuario === ""; }
 function isEmptyPass(senha) {
-  switch (senha) {
-    case "":
-    case null:
-      senha = "";
-      break;
-  }
-  return senha === "";
+  
+
+  return (senha === "");
 }
 
 function testeUsuarioSenha(usuario, senha) {

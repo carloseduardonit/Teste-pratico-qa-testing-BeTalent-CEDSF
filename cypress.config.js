@@ -1,9 +1,12 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  video: true,
+  
   e2e: {
-    experimentalStudio: true,
     baseUrl: 'https://www.saucedemo.com',
+    experimentalStudio: true,
+    chromeWebSecurity: false,
     pageLoadTimeout: 120000,
     //waitForAnimations: false,
     setupNodeEvents(on, config) {
