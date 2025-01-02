@@ -31,15 +31,15 @@ describe("Funcionalidade: Login", () => {
     acessarUsuario("", senha);
   });
 
-  it.skip('1.2.1.8', () => {
-    acessarUsuario("visual_user", null);
+  it('1.2.1.8 Validar o não preenchimento campo "Senha"', () => {
+    acessarUsuario("visual_user", "" );
   });
 
-  it('1.2.1.9', () => {
+  it('1.2.1.9 Validar o não preenchimento campos "Nome Usuario" e "Senha"', () => {
     acessarUsuario("", "");
   });
 
-  it('1.2.1.10', () => {
+  it('1.2.1.10 Validar autenticação do usuario invalido', () => {
     acessarUsuario('carlos', 'eee');
   });
 });
@@ -53,11 +53,7 @@ function acessarUsuario(usuario, password) {
 }
 
 function isEmptyUser(usuario) { return usuario === ""; }
-function isEmptyPass(senha) {
-  
-
-  return (senha === "");
-}
+function isEmptyPass(senha) { return (senha === "");}
 
 function testeUsuarioSenha(usuario, senha) {
   if (isEmptyPass(senha) && isEmptyUser(usuario)) {
