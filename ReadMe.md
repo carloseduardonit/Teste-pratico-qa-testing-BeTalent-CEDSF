@@ -134,10 +134,37 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 ##### 1.2.1.7 Validar o não preenchimento campo "Nome Usuario"
 
  ``` Gherkin
-  Scenario: Login bloqueado com usuário locked_out_user
+  Scenario: Validar o não preenchimento campo "Nome Usuario"
   Given o usuário está na página de login "https://www.saucedemo.com/"
   When ele insere apenas a senha "secret_sauce"
   Then ele deve ver a mensagem "Epic sadface: Username is required"
+  ```
+
+##### 1.2.1.8 Validar o não preenchimento campo "Senha"
+
+ ``` Gherkin
+  Scenario: Validar o não preenchimento campo "Senha"
+  Given o usuário está na página de login "https://www.saucedemo.com/"
+  When ele insere o nome de usuário "standard_user" 
+  Then ele deve ver a mensagem "Epic sadface: PassWord is required"
+  ```
+
+##### 1.2.1.9 Validar o não preenchimento campos "Nome Usuario" e "Senha"
+
+  ``` Gherkin
+  Scenario: Validar o não preenchimento campos "Nome Usuario" e "Senha"
+  Given o usuário está na página de login "https://www.saucedemo.com/"
+  When ele insere o nome de usuário "" e a senha ""
+  Thenele deve ver a mensagem "Epic sadface: PassWord is required"
+  ```
+
+##### 1.2.1.10 Validar autenticação do usuario invalido
+
+  ``` Gherkin
+  Scenario: Validar autenticação do usuario invalido
+  Given o usuário está na página de login "https://www.saucedemo.com/"
+  When ele insere o nome de usuário "nada" e a senha "pas123"
+  Then ele deve ver a mensagem "Epic sadface: Username and password do not match any user in this service"
   ```
 
 #### [1.2.2 Ordenação e filtragem de produtos](/features/1.2.2%20Ordenação%20e%20filtragem%20de%20produtos.feature)
