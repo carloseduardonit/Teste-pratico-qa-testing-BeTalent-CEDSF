@@ -40,7 +40,12 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 ### 1.2 Cenários mínimos a serem testados
 
-#### [1.2.1 Login com diferentes tipos de usuários disponíveis](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)
+#### 1.2.1 Login com diferentes tipos de usuários disponíveis
+
+|Feramenta|Link do Arquivo|
+|:---|:---|
+|![Gherkin](https://img.shields.io/badge/Cucumber-23D96C.svg?style=for-the-badge&logo=Cucumber&logoColor=white)|[Escrita dos teste](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)|
+|![Cypress](https://img.shields.io/badge/Cypress-69D3A7.svg?style=for-the-badge&logo=Cypress&logoColor=white)|[Arquivo do teste automatizado](/cypress/e2e/Login/login.cy.js)|
 
   ``` Gherkin
   Feature: Login de usuários no sistema
@@ -85,7 +90,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   **Teste Manual**
   ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
 
-  **Teste automatizado Cypress**
+
   
 ##### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
 
