@@ -44,7 +44,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 
 |Feramenta|Link do Arquivo|
 |:---|:---|
-|![Gherkin](https://img.shields.io/badge/Cucumber-23D96C.svg?style=for-the-badge&logo=Cucumber&logoColor=white)|[Escrita dos teste](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)|
+|![Gherkin](https://img.shields.io/badge/Cucumber-23D96C.svg?style=for-the-badge&logo=Cucumber&logoColor=white)|[Escrita dos testes  em gherkin](/features/1.2.1%20Login%20com%20diferentes%20tipos%20de%20usuários%20disponíveis.feature)|
 |![Cypress](https://img.shields.io/badge/Cypress-69D3A7.svg?style=for-the-badge&logo=Cypress&logoColor=white)|[Arquivo do teste automatizado](/cypress/e2e/Login/login.cy.js)|
 
   ``` Gherkin
@@ -90,8 +90,6 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
   **Teste Manual**
   ![locked_out_user](/IMAGEM/2.1%20Cenario%20UI/Login/locked_out_user.gif)
 
-
-  
 ##### 1.2.1.3 Problemas ao acessar o sistema com usuário problem_user
 
   ``` Gherkin

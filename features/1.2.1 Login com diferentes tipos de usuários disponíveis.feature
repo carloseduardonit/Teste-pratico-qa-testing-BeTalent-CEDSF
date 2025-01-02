@@ -1,3 +1,6 @@
+# author: @Carlos Eduardo
+# github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+
 Feature: Login de usuários no sistema
   Como um usuário do sistema
   Quero acessar o sistema com diferentes credenciais
