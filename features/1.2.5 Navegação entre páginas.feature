@@ -1,3 +1,6 @@
+# author: @Carlos Eduardo
+# github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+
 Feature: Navegação entre páginas
   Como um usuário do sistema
   Quero navegar entre as diferentes páginas do site
