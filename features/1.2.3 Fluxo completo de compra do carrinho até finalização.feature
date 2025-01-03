@@ -1,3 +1,6 @@
+# author: @Carlos Eduardo
+# github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+
 Feature: Fluxo completo de compra
   Como um usuário do sistema
   Quero adicionar produtos ao carrinho e finalizar a compra

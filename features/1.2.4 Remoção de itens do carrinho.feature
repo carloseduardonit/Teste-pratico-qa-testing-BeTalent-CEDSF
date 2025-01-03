@@ -1,3 +1,6 @@
+# author: @Carlos Eduardo
+# github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+
 Feature: Remoção de itens do carrinho
   Como um usuário do sistema
   Quero remover itens do meu carrinho
