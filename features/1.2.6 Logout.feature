@@ -1,3 +1,6 @@
+# author: @Carlos Eduardo
+# github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+
 Feature: Logout pelo menu
   Como um usuário autenticado
   Quero realizar logout através do menu

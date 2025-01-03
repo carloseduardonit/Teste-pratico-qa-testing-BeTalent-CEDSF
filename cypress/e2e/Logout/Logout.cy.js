@@ -1,4 +1,6 @@
-
+// author: Carlos Eduardo
+// github: https://github.com/carloseduardonit/Teste-pratico-qa-testing-BeTalent-CEDSF
+// Teste de Logout
 
 describe('Funcionalidade: Logout', () => {    
     let botaoMenu ="#react-burger-menu-btn";
