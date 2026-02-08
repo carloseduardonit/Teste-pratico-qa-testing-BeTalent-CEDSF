@@ -25,7 +25,7 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 <img src="/IMAGEM/demostracao.gif" alt="Demostração de com fazer">
 
 ---------------------------------
-<details>
+<details open>
   <summary>
 
 ## 1. UI TESTING
@@ -571,7 +571,8 @@ Os requisitos a serem atendidos estão descritos a seguir para cada caso.
 </details>
 
 ---------------------------------
-<details>
+
+<details open>
   <summary>
 
 ## 2. API TESTING
